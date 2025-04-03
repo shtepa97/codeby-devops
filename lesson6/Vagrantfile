@@ -1,0 +1,32 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.define "server" do |server|
+    server.vm.box = "bento/ubuntu-22.04"
+    server.vm.network "public_network", type: "dhcp"
+    server.vm.hostname = "server"
+
+    # Провижининг для сервера
+    server.vm.provision "shell", inline: <<-SHELL
+      sudo apt-get update
+      sudo apt-get install -y openssh-server
+    SHELL
+  end
+
+  config.vm.define "client" do |client|
+    client.vm.box = "bento/ubuntu-22.04"
+    client.vm.network "public_network", type: "dhcp"
+    client.vm.hostname = "client"
+
+    client.vm.provision "shell", inline: <<-SHELL
+      sudo apt-get update
+      sudo apt-get install -y openssh-client
+      sudo apt-get install -y sshpass
+      ssh-keygen -f ~/.ssh/id_rsa -N ""
+      sshpass -p 'vagrant' ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@server
+    SHELL
+  end
+
+end
