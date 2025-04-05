@@ -1,0 +1,414 @@
+Script started on 2025-03-30 12:21:43+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="146" LINES="35"]
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ sudo apt install java
+java2html               javacc4                 java-common             javahelper              java-policy             java-wrappers
+java3ds-fileloader      javacc4-doc             javahelp2               javamorph               java-propose-classpath  
+javacc                  javacc-doc              javahelp2-doc           java-package            javascript-common       
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ sudo apt install java[K[K[K[Kopen
+Display all 372 possibilities? (y or n)
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ sudo apt install openjdk-
+openjdk-11-dbg           openjdk-17-doc           openjdk-18-jre           openjdk-19-source        openjdk-8-demo
+openjdk-11-demo          openjdk-17-jdk           openjdk-18-jre-headless  openjdk-21-dbg           openjdk-8-doc
+openjdk-11-doc           openjdk-17-jdk-headless  openjdk-18-jre-zero      openjdk-21-demo          openjdk-8-jdk
+openjdk-11-jdk           openjdk-17-jre           openjdk-18-source        openjdk-21-doc           openjdk-8-jdk-headless
+openjdk-11-jdk-headless  openjdk-17-jre-headless  openjdk-19-dbg           openjdk-21-jdk           openjdk-8-jre
+openjdk-11-jre           openjdk-17-jre-zero      openjdk-19-demo          openjdk-21-jdk-headless  openjdk-8-jre-headless
+openjdk-11-jre-dcevm     openjdk-17-source        openjdk-19-doc           openjdk-21-jre           openjdk-8-jre-zero
+openjdk-11-jre-headless  openjdk-18-dbg           openjdk-19-jdk           openjdk-21-jre-headless  openjdk-8-source
+openjdk-11-jre-zero      openjdk-18-demo          openjdk-19-jdk-headless  openjdk-21-jre-zero      
+openjdk-11-source        openjdk-18-doc           openjdk-19-jre           openjdk-21-source        
+openjdk-17-dbg           openjdk-18-jdk           openjdk-19-jre-headless  openjdk-21-testsupport   
+openjdk-17-demo          openjdk-18-jdk-headless  openjdk-19-jre-zero      openjdk-8-dbg            
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ sudo apt install openjdk-21-jdk
+[?2004l[sudo] password for user: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates-java fonts-dejavu-extra java-common libatk-wrapper-java libatk-wrapper-java-jni libice-dev libpthread-stubs0-dev libsm-dev
+  libx11-dev libxau-dev libxcb1-dev libxdmcp-dev libxt-dev openjdk-21-jdk-headless openjdk-21-jre openjdk-21-jre-headless x11proto-dev
+  xorg-sgml-doctools xtrans-dev
+Suggested packages:
+  default-jre libice-doc libsm-doc libx11-doc libxcb-doc libxt-doc openjdk-21-demo openjdk-21-source visualvm fonts-ipafont-gothic
+  fonts-ipafont-mincho fonts-wqy-microhei | fonts-wqy-zenhei
+The following NEW packages will be installed:
+  ca-certificates-java fonts-dejavu-extra java-common libatk-wrapper-java libatk-wrapper-java-jni libice-dev libpthread-stubs0-dev libsm-dev
+  libx11-dev libxau-dev libxcb1-dev libxdmcp-dev libxt-dev openjdk-21-jdk openjdk-21-jdk-headless openjdk-21-jre openjdk-21-jre-headless
+  x11proto-dev xorg-sgml-doctools xtrans-dev
+0 upgraded, 20 newly installed, 0 to remove and 0 not upgraded.
+Need to get 135 MB of archives.
+After this operation, 316 MB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+[33m0% [Working][0m            Get:1 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 java-common all 0.72build2 [6 782 B]
+[33m0% [1 java-common 904 B/6 782 B 13%][0m[33m                                      1% [Working][0m            Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-21-jre-headless amd64 21.0.6+7-1~22.04.1 [46,8 MB]
+[33m1% [2 openjdk-21-jre-headless 14,3 kB/46,8 MB 0%][0m[33m3% [2 openjdk-21-jre-headless 2 789 kB/46,8 MB 6%][0m[33m4% [2 openjdk-21-jre-headless 5 000 kB/46,8 MB 11%][0m[33m6% [2 openjdk-21-jre-headless 8 268 kB/46,8 MB 18%][0m[33m                                                     8% [2 openjdk-21-jre-headless 11,0 MB/46,8 MB 24%][0m[33m9% [2 openjdk-21-jre-headless 14,2 MB/46,8 MB 30%][0m[33m11% [2 openjdk-21-jre-headless 16,6 MB/46,8 MB 36%][0m[33m13% [2 openjdk-21-jre-headless 20,2 MB/46,8 MB 43%][0m[33m15% [2 openjdk-21-jre-headless 23,9 MB/46,8 MB 51%][0m[33m17% [2 openjdk-21-jre-headless 26,3 MB/46,8 MB 56%][0m[33m18% [2 openjdk-21-jre-headless 28,7 MB/46,8 MB 61%][0m[33m19% [2 openjdk-21-jre-headless 30,8 MB/46,8 MB 66%][0m[33m20% [2 openjdk-21-jre-headless 32,8 MB/46,8 MB 70%]                                                                              5 283 kB/s 19s[0m[33m22% [2 openjdk-21-jre-headless 35,3 MB/46,8 MB 75%]                                                                              5 283 kB/s 18s[0m[33m23% [2 openjdk-21-jre-headless 37,6 MB/46,8 MB 80%]                                                                              5 283 kB/s 18s[0m[33m25% [2 openjdk-21-jre-headless 39,9 MB/46,8 MB 85%]                                                                              5 283 kB/s 18s[0m[33m25% [2 openjdk-21-jre-headless 41,4 MB/46,8 MB 89%]                                                                              5 283 kB/s 17s[0m[33m26% [2 openjdk-21-jre-headless 42,9 MB/46,8 MB 92%]                                                                              5 283 kB/s 17s[0m[33m27% [2 openjdk-21-jre-headless 44,3 MB/46,8 MB 95%]                                                                              5 283 kB/s 17s[0m[33m28% [2 openjdk-21-jre-headless 46,2 MB/46,8 MB 99%]                                                                              5 283 kB/s 16s[0m                                                                                                                                                 Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 ca-certificates-java all 20190909ubuntu1.2 [12,1 kB]
+[33m30% [3 ca-certificates-java 7 432 B/12,1 kB 61%]                                                                               5 283 kB/s 16s[0m[33m31% [Working]                                                                                                                    5 283 kB/s 16s[0m                                                                                                                                                 Get:4 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 fonts-dejavu-extra all 2.37-2build1 [2 041 kB]
+[33m31% [4 fonts-dejavu-extra 60,5 kB/2 041 kB 3%]                                                                                 5 283 kB/s 16s[0m[33m32% [4 fonts-dejavu-extra 2 036 kB/2 041 kB 100%]                                                                            5 283 kB/s 16s[0m                                                                                                                                                 Get:5 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libatk-wrapper-java all 0.38.0-5build1 [53,1 kB]
+[33m33% [5 libatk-wrapper-java 11,9 kB/53,1 kB 22%]                                                                                  5 283 kB/s 16s[0m[33m34% [Working]                                                                                                                    5 283 kB/s 16s[0m                                                                                                                                                 Get:6 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libatk-wrapper-java-jni amd64 0.38.0-5build1 [49,0 kB]
+[33m34% [6 libatk-wrapper-java-jni 22,7 kB/49,0 kB 46%]                                                                              5 283 kB/s 16s[0m[33m35% [Working]                                                                                                                    5 283 kB/s 16s[0m                                                                                                                                                 Get:7 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 xorg-sgml-doctools all 1:1.11-1.1 [10,9 kB]
+[33m35% [7 xorg-sgml-doctools 10,9 kB/10,9 kB 100%]                                                                                  5 283 kB/s 16s[0m[33m36% [Working]                                                                                                                    5 283 kB/s 16s[0m                                                                                                                                                 Get:8 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 x11proto-dev all 2021.5-1 [604 kB]
+[33m36% [8 x11proto-dev 106 kB/604 kB 18%]                                                                                           5 283 kB/s 16s[0m[33m37% [Working]                                                                                                                    5 283 kB/s 16s[0m                                                                                                                                                 Get:9 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libice-dev amd64 2:1.0.10-1build2 [51,4 kB]
+[33m37% [9 libice-dev 0 B/51,4 kB 0%]                                                                                                5 283 kB/s 16s[0m[33m38% [Waiting for headers]                                                                                                        5 283 kB/s 16s[0m                                                                                                                                                 Get:10 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libpthread-stubs0-dev amd64 0.4-1build2 [5 516 B]
+                                                                                                                                                 Get:11 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libsm-dev amd64 2:1.2.3-1build2 [18,1 kB]
+                                                                                                                                                 Get:12 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libxau-dev amd64 1:1.0.9-1build5 [9 724 B]
+[33m40% [12 libxau-dev 9 724 B/9 724 B 100%]                                                                                     5 283 kB/s 16s[0m[33m41% [Working]                                                                                                                    5 283 kB/s 16s[0m                                                                                                                                                 Get:13 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libxdmcp-dev amd64 1:1.1.3-0ubuntu5 [26,5 kB]
+[33m41% [13 libxdmcp-dev 0 B/26,5 kB 0%]                                                                                             5 283 kB/s 16s[0m[33m42% [Working]                                                                                                                    5 283 kB/s 16s[0m                                                                                                                                                 Get:14 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 xtrans-dev all 1.4.0-1 [68,9 kB]
+[33m42% [14 xtrans-dev 0 B/68,9 kB 0%]                                                                                               5 283 kB/s 16s[0m[33m43% [Working]                                                                                                                    5 283 kB/s 16s[0m                                                                                                                                                 Get:15 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libxcb1-dev amd64 1.14-3ubuntu3 [86,5 kB]
+[33m43% [15 libxcb1-dev 22,9 kB/86,5 kB 27%]                                                                                         5 283 kB/s 16s[0m                                                                                                                                                 Get:16 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libx11-dev amd64 2:1.7.5-1ubuntu0.3 [744 kB]
+[33m44% [16 libx11-dev 46,6 kB/744 kB 6%]                                                                                            5 283 kB/s 16s[0m[33m46% [Working]                                                                                                                    5 283 kB/s 16s[0m                                                                                                                                                 Get:17 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libxt-dev amd64 1:1.2.1-1 [396 kB]
+[33m46% [17 libxt-dev 10,9 kB/396 kB 3%]                                                                                             5 283 kB/s 16s[0m                                                                                                                                                 Get:18 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-21-jre amd64 21.0.6+7-1~22.04.1 [233 kB]
+[33m47% [18 openjdk-21-jre 36,4 kB/233 kB 16%]                                                                                       5 283 kB/s 15s[0m[33m48% [Working]                                                                                                                    5 283 kB/s 15s[0m                                                                                                                                                 Get:19 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-21-jdk-headless amd64 21.0.6+7-1~22.04.1 [82,6 MB]
+[33m48% [19 openjdk-21-jdk-headless 30,1 kB/82,6 MB 0%]                                                                              5 283 kB/s 15s[0m[33m50% [19 openjdk-21-jdk-headless 2 314 kB/82,6 MB 3%]                                                                           5 283 kB/s 15s[0m[33m50% [19 openjdk-21-jdk-headless 3 710 kB/82,6 MB 4%]                                                                           5 283 kB/s 15s[0m[33m51% [19 openjdk-21-jdk-headless 5 339 kB/82,6 MB 6%]                                                                           3 664 kB/s 21s[0m[33m53% [19 openjdk-21-jdk-headless 7 609 kB/82,6 MB 9%]                                                                           3 664 kB/s 20s[0m[33m54% [19 openjdk-21-jdk-headless 9 788 kB/82,6 MB 12%]                                                                          3 664 kB/s 20s[0m[33m55% [19 openjdk-21-jdk-headless 12,2 MB/82,6 MB 15%]                                                                             3 664 kB/s 19s[0m[33m57% [19 openjdk-21-jdk-headless 14,6 MB/82,6 MB 18%]                                                                             3 664 kB/s 18s[0m[33m59% [19 openjdk-21-jdk-headless 17,6 MB/82,6 MB 21%]                                                                             3 664 kB/s 18s[0m[33m60% [19 openjdk-21-jdk-headless 20,0 MB/82,6 MB 24%]                                                                             3 664 kB/s 17s[0m[33m62% [19 openjdk-21-jdk-headless 22,6 MB/82,6 MB 27%]                                                                             3 664 kB/s 16s[0m[33m63% [19 openjdk-21-jdk-headless 25,0 MB/82,6 MB 30%]                                                                             3 664 kB/s 16s[0m[33m64% [19 openjdk-21-jdk-headless 26,9 MB/82,6 MB 33%]                                                                             3 664 kB/s 15s[0m[33m65% [19 openjdk-21-jdk-headless 28,6 MB/82,6 MB 35%]                                                                             3 664 kB/s 15s[0m[33m66% [19 openjdk-21-jdk-headless 30,7 MB/82,6 MB 37%]                                                                             3 664 kB/s 14s[0m[33m67% [19 openjdk-21-jdk-headless 32,6 MB/82,6 MB 39%]                                                                             4 528 kB/s 11s[0m[33m69% [19 openjdk-21-jdk-headless 35,1 MB/82,6 MB 43%]                                                                             4 528 kB/s 10s[0m[33m71% [19 openjdk-21-jdk-headless 37,8 MB/82,6 MB 46%]                                                                             4 528 kB/s 10s[0m[33m71% [19 openjdk-21-jdk-headless 39,2 MB/82,6 MB 48%]                                                                              4 528 kB/s 9s[0m[33m73% [19 openjdk-21-jdk-headless 41,7 MB/82,6 MB 50%]                                                                              4 528 kB/s 9s[0m[33m74% [19 openjdk-21-jdk-headless 43,5 MB/82,6 MB 53%]                                                                              4 528 kB/s 8s[0m[33m75% [19 openjdk-21-jdk-headless 45,4 MB/82,6 MB 55%]                                                                              4 528 kB/s 8s[0m[33m76% [19 openjdk-21-jdk-headless 47,7 MB/82,6 MB 58%]                                                                              4 528 kB/s 8s[0m[33m78% [19 openjdk-21-jdk-headless 50,7 MB/82,6 MB 61%]                                                                              4 528 kB/s 7s[0m[33m80% [19 openjdk-21-jdk-headless 53,0 MB/82,6 MB 64%]                                                                              4 528 kB/s 6s[0m[33m81% [19 openjdk-21-jdk-headless 55,3 MB/82,6 MB 67%]                                                                              4 528 kB/s 6s[0m[33m82% [19 openjdk-21-jdk-headless 57,6 MB/82,6 MB 70%]                                                                              4 528 kB/s 5s[0m[33m84% [19 openjdk-21-jdk-headless 59,7 MB/82,6 MB 72%]                                                                              4 512 kB/s 5s[0m[33m85% [19 openjdk-21-jdk-headless 62,1 MB/82,6 MB 75%]                                                                              4 512 kB/s 4s[0m[33m87% [19 openjdk-21-jdk-headless 65,0 MB/82,6 MB 79%]                                                                              4 512 kB/s 4s[0m[33m88% [19 openjdk-21-jdk-headless 67,5 MB/82,6 MB 82%]                                                                              4 512 kB/s 3s[0m[33m89% [19 openjdk-21-jdk-headless 69,0 MB/82,6 MB 84%]                                                                              4 512 kB/s 3s[0m[33m90% [19 openjdk-21-jdk-headless 70,4 MB/82,6 MB 85%]                                                                              4 512 kB/s 3s[0m[33m91% [19 openjdk-21-jdk-headless 71,9 MB/82,6 MB 87%]                                                                              4 512 kB/s 2s[0m[33m92% [19 openjdk-21-jdk-headless 73,6 MB/82,6 MB 89%]                                                                              4 512 kB/s 2s[0m[33m93% [19 openjdk-21-jdk-headless 76,3 MB/82,6 MB 92%]                                                                              4 512 kB/s 1s[0m[33m95% [19 openjdk-21-jdk-headless 79,4 MB/82,6 MB 96%]                                                                              4 512 kB/s 1s[0m[33m97% [19 openjdk-21-jdk-headless 82,2 MB/82,6 MB 100%]                                                                             4 512 kB/s 0s[0m[33m98% [Working]                                                                                                                     4 512 kB/s 0s[0m                                                                                                                                                 Get:20 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-21-jdk amd64 21.0.6+7-1~22.04.1 [1 649 kB]
+[33m98% [20 openjdk-21-jdk 51,7 kB/1 649 kB 3%]                                                                                     4 512 kB/s 0s[0m[33m100% [Working]                                                                                                                    4 512 kB/s 0s[0m                                                                                                                                                 Fetched 135 MB in 30s (4 457 kB/s)
+
+7[0;34r8[1ASelecting previously unselected package java-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 210192 files and directories currently installed.)
+Preparing to unpack .../00-java-common_0.72build2_all.deb ...
+7[35;0f[42m[30mProgress: [  0%][49m[39m [............................................................................................................................] 87[35;0f[42m[30mProgress: [  1%][49m[39m [#...........................................................................................................................] 8Unpacking java-common (0.72build2) ...
+7[35;0f[42m[30mProgress: [  2%][49m[39m [###.........................................................................................................................] 8Selecting previously unselected package openjdk-21-jre-headless:amd64.
+Preparing to unpack .../01-openjdk-21-jre-headless_21.0.6+7-1~22.04.1_amd64.deb ...
+7[35;0f[42m[30mProgress: [  4%][49m[39m [####........................................................................................................................] 8Unpacking openjdk-21-jre-headless:amd64 (21.0.6+7-1~22.04.1) ...
+7[35;0f[42m[30mProgress: [  5%][49m[39m [######......................................................................................................................] 8Selecting previously unselected package ca-certificates-java.
+Preparing to unpack .../02-ca-certificates-java_20190909ubuntu1.2_all.deb ...
+7[35;0f[42m[30mProgress: [  6%][49m[39m [#######.....................................................................................................................] 8Unpacking ca-certificates-java (20190909ubuntu1.2) ...
+7[35;0f[42m[30mProgress: [  7%][49m[39m [#########...................................................................................................................] 8Selecting previously unselected package fonts-dejavu-extra.
+Preparing to unpack .../03-fonts-dejavu-extra_2.37-2build1_all.deb ...
+7[35;0f[42m[30mProgress: [  9%][49m[39m [##########..................................................................................................................] 8Unpacking fonts-dejavu-extra (2.37-2build1) ...
+7[35;0f[42m[30mProgress: [ 10%][49m[39m [############................................................................................................................] 8Selecting previously unselected package libatk-wrapper-java.
+Preparing to unpack .../04-libatk-wrapper-java_0.38.0-5build1_all.deb ...
+7[35;0f[42m[30mProgress: [ 11%][49m[39m [#############...............................................................................................................] 8Unpacking libatk-wrapper-java (0.38.0-5build1) ...
+7[35;0f[42m[30mProgress: [ 12%][49m[39m [###############.............................................................................................................] 8Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+Preparing to unpack .../05-libatk-wrapper-java-jni_0.38.0-5build1_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 14%][49m[39m [################............................................................................................................] 8Unpacking libatk-wrapper-java-jni:amd64 (0.38.0-5build1) ...
+7[35;0f[42m[30mProgress: [ 15%][49m[39m [##################..........................................................................................................] 8Selecting previously unselected package xorg-sgml-doctools.
+Preparing to unpack .../06-xorg-sgml-doctools_1%3a1.11-1.1_all.deb ...
+7[35;0f[42m[30mProgress: [ 16%][49m[39m [###################.........................................................................................................] 8Unpacking xorg-sgml-doctools (1:1.11-1.1) ...
+7[35;0f[42m[30mProgress: [ 17%][49m[39m [#####################.......................................................................................................] 8Selecting previously unselected package x11proto-dev.
+Preparing to unpack .../07-x11proto-dev_2021.5-1_all.deb ...
+7[35;0f[42m[30mProgress: [ 19%][49m[39m [######################......................................................................................................] 8Unpacking x11proto-dev (2021.5-1) ...
+7[35;0f[42m[30mProgress: [ 20%][49m[39m [########################....................................................................................................] 8Selecting previously unselected package libice-dev:amd64.
+Preparing to unpack .../08-libice-dev_2%3a1.0.10-1build2_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 21%][49m[39m [##########################..................................................................................................] 8Unpacking libice-dev:amd64 (2:1.0.10-1build2) ...
+7[35;0f[42m[30mProgress: [ 22%][49m[39m [###########################.................................................................................................] 8Selecting previously unselected package libpthread-stubs0-dev:amd64.
+Preparing to unpack .../09-libpthread-stubs0-dev_0.4-1build2_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 23%][49m[39m [#############################...............................................................................................] 8Unpacking libpthread-stubs0-dev:amd64 (0.4-1build2) ...
+7[35;0f[42m[30mProgress: [ 25%][49m[39m [##############################..............................................................................................] 8Selecting previously unselected package libsm-dev:amd64.
+Preparing to unpack .../10-libsm-dev_2%3a1.2.3-1build2_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 26%][49m[39m [################################............................................................................................] 8Unpacking libsm-dev:amd64 (2:1.2.3-1build2) ...
+7[35;0f[42m[30mProgress: [ 27%][49m[39m [#################################...........................................................................................] 8Selecting previously unselected package libxau-dev:amd64.
+Preparing to unpack .../11-libxau-dev_1%3a1.0.9-1build5_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 28%][49m[39m [###################################.........................................................................................] 8Unpacking libxau-dev:amd64 (1:1.0.9-1build5) ...
+7[35;0f[42m[30mProgress: [ 30%][49m[39m [####################################........................................................................................] 8Selecting previously unselected package libxdmcp-dev:amd64.
+Preparing to unpack .../12-libxdmcp-dev_1%3a1.1.3-0ubuntu5_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 31%][49m[39m [######################################......................................................................................] 8Unpacking libxdmcp-dev:amd64 (1:1.1.3-0ubuntu5) ...
+7[35;0f[42m[30mProgress: [ 32%][49m[39m [#######################################.....................................................................................] 8Selecting previously unselected package xtrans-dev.
+Preparing to unpack .../13-xtrans-dev_1.4.0-1_all.deb ...
+7[35;0f[42m[30mProgress: [ 33%][49m[39m [#########################################...................................................................................] 8Unpacking xtrans-dev (1.4.0-1) ...
+7[35;0f[42m[30mProgress: [ 35%][49m[39m [##########################################..................................................................................] 8Selecting previously unselected package libxcb1-dev:amd64.
+Preparing to unpack .../14-libxcb1-dev_1.14-3ubuntu3_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 36%][49m[39m [############################################................................................................................] 8Unpacking libxcb1-dev:amd64 (1.14-3ubuntu3) ...
+7[35;0f[42m[30mProgress: [ 37%][49m[39m [#############################################...............................................................................] 8Selecting previously unselected package libx11-dev:amd64.
+Preparing to unpack .../15-libx11-dev_2%3a1.7.5-1ubuntu0.3_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 38%][49m[39m [###############################################.............................................................................] 8Unpacking libx11-dev:amd64 (2:1.7.5-1ubuntu0.3) ...
+7[35;0f[42m[30mProgress: [ 40%][49m[39m [################################################............................................................................] 8Selecting previously unselected package libxt-dev:amd64.
+Preparing to unpack .../16-libxt-dev_1%3a1.2.1-1_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 41%][49m[39m [##################################################..........................................................................] 8Unpacking libxt-dev:amd64 (1:1.2.1-1) ...
+7[35;0f[42m[30mProgress: [ 42%][49m[39m [####################################################........................................................................] 8Selecting previously unselected package openjdk-21-jre:amd64.
+Preparing to unpack .../17-openjdk-21-jre_21.0.6+7-1~22.04.1_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 43%][49m[39m [#####################################################.......................................................................] 8Unpacking openjdk-21-jre:amd64 (21.0.6+7-1~22.04.1) ...
+7[35;0f[42m[30mProgress: [ 44%][49m[39m [#######################################################.....................................................................] 8Selecting previously unselected package openjdk-21-jdk-headless:amd64.
+Preparing to unpack .../18-openjdk-21-jdk-headless_21.0.6+7-1~22.04.1_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 46%][49m[39m [########################################################....................................................................] 8Unpacking openjdk-21-jdk-headless:amd64 (21.0.6+7-1~22.04.1) ...
+7[35;0f[42m[30mProgress: [ 47%][49m[39m [##########################################################..................................................................] 8Selecting previously unselected package openjdk-21-jdk:amd64.
+Preparing to unpack .../19-openjdk-21-jdk_21.0.6+7-1~22.04.1_amd64.deb ...
+7[35;0f[42m[30mProgress: [ 48%][49m[39m [###########################################################.................................................................] 8Unpacking openjdk-21-jdk:amd64 (21.0.6+7-1~22.04.1) ...
+7[35;0f[42m[30mProgress: [ 49%][49m[39m [#############################################################...............................................................] 8Setting up java-common (0.72build2) ...
+7[35;0f[42m[30mProgress: [ 51%][49m[39m [##############################################################..............................................................] 87[35;0f[42m[30mProgress: [ 52%][49m[39m [################################################################............................................................] 8Setting up libpthread-stubs0-dev:amd64 (0.4-1build2) ...
+7[35;0f[42m[30mProgress: [ 53%][49m[39m [#################################################################...........................................................] 87[35;0f[42m[30mProgress: [ 54%][49m[39m [###################################################################.........................................................] 8Setting up xtrans-dev (1.4.0-1) ...
+7[35;0f[42m[30mProgress: [ 56%][49m[39m [####################################################################........................................................] 87[35;0f[42m[30mProgress: [ 57%][49m[39m [######################################################################......................................................] 8Setting up fonts-dejavu-extra (2.37-2build1) ...
+7[35;0f[42m[30mProgress: [ 58%][49m[39m [#######################################################################.....................................................] 87[35;0f[42m[30mProgress: [ 59%][49m[39m [#########################################################################...................................................] 8Setting up xorg-sgml-doctools (1:1.11-1.1) ...
+7[35;0f[42m[30mProgress: [ 60%][49m[39m [###########################################################################.................................................] 8Setting up libatk-wrapper-java (0.38.0-5build1) ...
+7[35;0f[42m[30mProgress: [ 62%][49m[39m [############################################################################................................................] 87[35;0f[42m[30mProgress: [ 63%][49m[39m [##############################################################################..............................................] 8Setting up libatk-wrapper-java-jni:amd64 (0.38.0-5build1) ...
+7[35;0f[42m[30mProgress: [ 64%][49m[39m [###############################################################################.............................................] 87[35;0f[42m[30mProgress: [ 65%][49m[39m [#################################################################################...........................................] 8Setting up ca-certificates-java (20190909ubuntu1.2) ...
+7[35;0f[42m[30mProgress: [ 67%][49m[39m [##################################################################################..........................................] 8head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+Adding debian:emSign_ECC_Root_CA_-_G3.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+Adding debian:XRamp_Global_CA_Root.pem
+Adding debian:ePKI_Root_Certification_Authority.pem
+Adding debian:GlobalSign_Root_CA_-_R3.pem
+Adding debian:Certainly_Root_E1.pem
+Adding debian:BJCA_Global_Root_CA1.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:Security_Communication_ECC_RootCA1.pem
+Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+Adding debian:SwissSign_Gold_CA_-_G2.pem
+Adding debian:GLOBALTRUST_2020.pem
+Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
+Adding debian:Sectigo_Public_Server_Authentication_Root_E46.pem
+Adding debian:Izenpe.com.pem
+Adding debian:Certum_Trusted_Network_CA_2.pem
+Adding debian:BJCA_Global_Root_CA2.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:Certainly_Root_R1.pem
+Adding debian:Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
+Adding debian:AffirmTrust_Commercial.pem
+Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+Adding debian:e-Szigno_Root_CA_2017.pem
+Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+Adding debian:GTS_Root_R4.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+Adding debian:Certigna.pem
+Adding debian:Baltimore_CyberTrust_Root.pem
+Adding debian:CA_Disig_Root_R2.pem
+Adding debian:Amazon_Root_CA_1.pem
+Adding debian:DigiCert_Global_Root_G3.pem
+Adding debian:QuoVadis_Root_CA_1_G3.pem
+Adding debian:GlobalSign_Root_R46.pem
+Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+Adding debian:TrustAsia_Global_Root_CA_G4.pem
+Adding debian:DigiCert_Global_Root_G2.pem
+Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+Adding debian:certSIGN_ROOT_CA.pem
+Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+Adding debian:SecureTrust_CA.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+Adding debian:AffirmTrust_Networking.pem
+Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:ISRG_Root_X2.pem
+Adding debian:Buypass_Class_2_Root_CA.pem
+Adding debian:Security_Communication_RootCA3.pem
+Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+Adding debian:Starfield_Class_2_CA.pem
+Adding debian:DigiCert_Global_Root_CA.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G4.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+Adding debian:QuoVadis_Root_CA_3.pem
+Adding debian:Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
+Adding debian:CommScope_Public_Trust_ECC_Root-02.pem
+Adding debian:SSL.com_TLS_ECC_Root_CA_2022.pem
+Adding debian:AffirmTrust_Premium_ECC.pem
+Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+Adding debian:COMODO_ECC_Certification_Authority.pem
+Adding debian:Certum_Trusted_Root_CA.pem
+Adding debian:TeliaSonera_Root_CA_v1.pem
+Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Adding debian:certSIGN_Root_CA_G2.pem
+Adding debian:SecureSign_RootCA11.pem
+Adding debian:GlobalSign_Root_CA_-_R6.pem
+Adding debian:CommScope_Public_Trust_ECC_Root-01.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Adding debian:COMODO_Certification_Authority.pem
+Adding debian:AC_RAIZ_FNMT-RCM.pem
+Adding debian:ssl-cert-snakeoil.pem
+Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
+Adding debian:TWCA_Global_Root_CA.pem
+Adding debian:TWCA_Root_Certification_Authority.pem
+Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+Adding debian:TunTrust_Root_CA.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:CFCA_EV_ROOT.pem
+Adding debian:Certigna_Root_CA.pem
+Adding debian:DigiCert_Trusted_Root_G4.pem
+Adding debian:ANF_Secure_Server_Root_CA.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+Adding debian:emSign_ECC_Root_CA_-_C3.pem
+Adding debian:USERTrust_RSA_Certification_Authority.pem
+Adding debian:Trustwave_Global_Certification_Authority.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Adding debian:GTS_Root_R3.pem
+Adding debian:GlobalSign_Root_E46.pem
+Adding debian:Certum_EC-384_CA.pem
+Adding debian:Go_Daddy_Class_2_CA.pem
+Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+Adding debian:emSign_Root_CA_-_C1.pem
+Adding debian:CommScope_Public_Trust_RSA_Root-01.pem
+Adding debian:emSign_Root_CA_-_G1.pem
+Adding debian:Entrust_Root_Certification_Authority.pem
+Adding debian:Telia_Root_CA_v2.pem
+Adding debian:USERTrust_ECC_Certification_Authority.pem
+Adding debian:vTrus_ECC_Root_CA.pem
+Adding debian:CommScope_Public_Trust_RSA_Root-02.pem
+Adding debian:GlobalSign_Root_CA.pem
+Adding debian:Security_Communication_Root_CA.pem
+Adding debian:vTrus_Root_CA.pem
+Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+Adding debian:ISRG_Root_X1.pem
+Adding debian:Buypass_Class_3_Root_CA.pem
+Adding debian:Secure_Global_CA.pem
+Adding debian:GTS_Root_R2.pem
+Adding debian:GTS_Root_R1.pem
+Adding debian:UCA_Extended_Validation_Root.pem
+Adding debian:Hongkong_Post_Root_CA_3.pem
+Adding debian:UCA_Global_G2_Root.pem
+Adding debian:Atos_TrustedRoot_2011.pem
+Adding debian:COMODO_RSA_Certification_Authority.pem
+Adding debian:TrustAsia_Global_Root_CA_G3.pem
+Adding debian:QuoVadis_Root_CA_2.pem
+Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+Adding debian:Certum_Trusted_Network_CA.pem
+Adding debian:Amazon_Root_CA_4.pem
+Adding debian:HiPKI_Root_CA_-_G1.pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+Adding debian:SZAFIR_ROOT_CA2.pem
+Adding debian:ACCVRAIZ1.pem
+Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+Adding debian:NAVER_Global_Root_Certification_Authority.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:Amazon_Root_CA_2.pem
+Adding debian:DigiCert_Assured_ID_Root_CA.pem
+Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Adding debian:SwissSign_Silver_CA_-_G2.pem
+Adding debian:Amazon_Root_CA_3.pem
+Adding debian:AffirmTrust_Premium.pem
+Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Adding debian:Comodo_AAA_Services_root.pem
+Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+done.
+Processing triggers for ca-certificates (20240203~22.04.1) ...
+7[35;0f[42m[30mProgress: [ 68%][49m[39m [####################################################################################........................................] 8Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+
+done.
+done.
+Processing triggers for sgml-base (1.30) ...
+7[35;0f[42m[30mProgress: [ 69%][49m[39m [#####################################################################################.......................................] 8Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Setting up x11proto-dev (2021.5-1) ...
+7[35;0f[42m[30mProgress: [ 70%][49m[39m [#######################################################################################.....................................] 87[35;0f[42m[30mProgress: [ 72%][49m[39m [########################################################################################....................................] 8Processing triggers for fontconfig (2.13.1-4.2ubuntu5) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+Setting up libxau-dev:amd64 (1:1.0.9-1build5) ...
+7[35;0f[42m[30mProgress: [ 73%][49m[39m [##########################################################################################..................................] 87[35;0f[42m[30mProgress: [ 74%][49m[39m [###########################################################################################.................................] 8Setting up openjdk-21-jre-headless:amd64 (21.0.6+7-1~22.04.1) ...
+7[35;0f[42m[30mProgress: [ 75%][49m[39m [#############################################################################################...............................] 8update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jpackage to provide /usr/bin/jpackage (jpackage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+7[35;0f[42m[30mProgress: [ 77%][49m[39m [##############################################################################################..............................] 8Processing triggers for hicolor-icon-theme (0.17-2) ...
+Setting up libice-dev:amd64 (2:1.0.10-1build2) ...
+7[35;0f[42m[30mProgress: [ 78%][49m[39m [################################################################################################............................] 87[35;0f[42m[30mProgress: [ 79%][49m[39m [#################################################################################################...........................] 8Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Setting up libsm-dev:amd64 (2:1.2.3-1build2) ...
+7[35;0f[42m[30mProgress: [ 80%][49m[39m [###################################################################################################.........................] 87[35;0f[42m[30mProgress: [ 81%][49m[39m [#####################################################################################################.......................] 8Processing triggers for man-db (2.10.2-1) ...
+Setting up openjdk-21-jre:amd64 (21.0.6+7-1~22.04.1) ...
+7[35;0f[42m[30mProgress: [ 83%][49m[39m [######################################################################################################......................] 87[35;0f[42m[30mProgress: [ 84%][49m[39m [########################################################################################################....................] 8Setting up libxdmcp-dev:amd64 (1:1.1.3-0ubuntu5) ...
+7[35;0f[42m[30mProgress: [ 85%][49m[39m [#########################################################################################################...................] 87[35;0f[42m[30mProgress: [ 86%][49m[39m [###########################################################################################################.................] 8Setting up openjdk-21-jdk-headless:amd64 (21.0.6+7-1~22.04.1) ...
+7[35;0f[42m[30mProgress: [ 88%][49m[39m [############################################################################################################................] 8update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jdeprscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jimage to provide /usr/bin/jimage (jimage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jlink to provide /usr/bin/jlink (jlink) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jmod to provide /usr/bin/jmod (jmod) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jshell to provide /usr/bin/jshell (jshell) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jwebserver to provide /usr/bin/jwebserver (jwebserver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jhsdb to provide /usr/bin/jhsdb (jhsdb) in auto mode
+7[35;0f[42m[30mProgress: [ 89%][49m[39m [##############################################################################################################..............] 8Setting up libxcb1-dev:amd64 (1.14-3ubuntu3) ...
+7[35;0f[42m[30mProgress: [ 90%][49m[39m [###############################################################################################################.............] 87[35;0f[42m[30mProgress: [ 91%][49m[39m [#################################################################################################################...........] 8Setting up libx11-dev:amd64 (2:1.7.5-1ubuntu0.3) ...
+7[35;0f[42m[30mProgress: [ 93%][49m[39m [##################################################################################################################..........] 87[35;0f[42m[30mProgress: [ 94%][49m[39m [####################################################################################################################........] 8Setting up openjdk-21-jdk:amd64 (21.0.6+7-1~22.04.1) ...
+7[35;0f[42m[30mProgress: [ 95%][49m[39m [#####################################################################################################################.......] 8update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+7[35;0f[42m[30mProgress: [ 96%][49m[39m [#######################################################################################################################.....] 8Setting up libxt-dev:amd64 (1:1.2.1-1) ...
+7[35;0f[42m[30mProgress: [ 98%][49m[39m [########################################################################################################################....] 87[35;0f[42m[30mProgress: [ 99%][49m[39m [##########################################################################################################################..] 8
+7[0;35r8[1A[J[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ ja[K[Kjava
+java     javac    javadoc  javap    
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ java --version 
+[?2004lopenjdk 21.0.6 2025-01-21
+OpenJDK Runtime Environment (build 21.0.6+7-Ubuntu-122.04.1)
+OpenJDK 64-Bit Server VM (build 21.0.6+7-Ubuntu-122.04.1, mixed mode, sharing)
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ java --version sudo apt install openjdk-21-jdk[16Pjava --version [Kjava --version 
+[?2004lopenjdk 21.0.6 2025-01-21
+OpenJDK Runtime Environment (build 21.0.6+7-Ubuntu-122.04.1)
+OpenJDK 64-Bit Server VM (build 21.0.6+7-Ubuntu-122.04.1, mixed mode, sharing)
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ exit
+[?2004lexit
+
+Script done on 2025-03-30 12:31:16+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-03-30 12:38:42+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="146" LINES="35"]
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ update-alternatives --install /ust[Kr/bin/java java /usr/bin/[K[K[K[Klib/jvm/java-19-openjdk-amd64/bin/k[Kja
+jar        jarsigner  java       javac      javadoc    javap      
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-19-openjdk-amd64/bin/ja
+jar        jarsigner  java       javac      javadoc    javap      
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-19-openjdk-amd64/bin/java 1[1@s[1P[1@s[C[1@u[1@d[1@o update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-19-openjdk-amd64/bin/java 1 [A]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [C[C[C[C[C
+[?2004l[sudo] password for user: 
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-19-openjdk-amd64/bin/java 1 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@21-openjdk-amd64/bin/java 1 [A]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K2
+[?2004lupdate-alternatives: warning: forcing reinstallation of alternative /usr/lib/jvm/java-21-openjdk-amd64/bin/java because link group java is broken
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ sudo ap[K[Kup
+update-alternatives         update-dictcommon-aspell    update-gsfontmap            update-mime                 update-xmlcatalog
+update-ca-certificates      update-dictcommon-hunspell  update-icon-caches          update-mime-database        upgrade-from-grub-legacy
+update-catalog              update-fonts-alias          update-inetd                update-notifier             upower
+update-cracklib             update-fonts-dir            update-info-dir             update-passwd               uptime
+update-default-aspell       update-fonts-scale          update-initramfs            update-pciids               
+update-default-ispell       update-grub                 update-java-alternatives    update-rc.d                 
+update-default-wordlist     update-grub2                update-locale               update-secureboot-policy    
+update-desktop-database     update-grub-gfxpayload      update-manager              update-shells               
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ sudo up
+update-alternatives         update-dictcommon-aspell    update-gsfontmap            update-mime                 update-xmlcatalog
+update-ca-certificates      update-dictcommon-hunspell  update-icon-caches          update-mime-database        upgrade-from-grub-legacy
+update-catalog              update-fonts-alias          update-inetd                update-notifier             upower
+update-cracklib             update-fonts-dir            update-info-dir             update-passwd               uptime
+update-default-aspell       update-fonts-scale          update-initramfs            update-pciids               
+update-default-ispell       update-grub                 update-java-alternatives    update-rc.d                 
+update-default-wordlist     update-grub2                update-locale               update-secureboot-policy    
+update-desktop-database     update-grub-gfxpayload      update-manager              update-shells               
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ sudo update-alternatives --config java
+[?2004lThere are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                         Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2         auto mode
+  1            /usr/lib/jvm/java-19-openjdk-amd64/bin/java   1         manual mode
+  2            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2         manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 0
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ java 0[K--version
+[?2004lopenjdk 21.0.6 2025-01-21
+OpenJDK Runtime Environment (build 21.0.6+7-Ubuntu-122.04.1)
+OpenJDK 64-Bit Server VM (build 21.0.6+7-Ubuntu-122.04.1, mixed mode, sharing)
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ java --versionsudo update-alternatives --config java
+[?2004lThere are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                         Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2         auto mode
+  1            /usr/lib/jvm/java-19-openjdk-amd64/bin/java   1         manual mode
+  2            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2         manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+update-alternatives: using /usr/lib/jvm/java-19-openjdk-amd64/bin/java to provide /usr/bin/java (java) in manual mode
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ sudo update-alternatives --config java[24Pjava --version
+[?2004lopenjdk 19.0.2 2023-01-17
+OpenJDK Runtime Environment (build 19.0.2+7-Ubuntu-0ubuntu322.04)
+OpenJDK 64-Bit Server VM (build 19.0.2+7-Ubuntu-0ubuntu322.04, mixed mode, sharing)
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ exit
+[?2004lexit
+
+Script done on 2025-03-30 12:41:12+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,375 @@
+Script started on 2025-03-30 12:05:43+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="146" LINES="35"]
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ ps -aux[K[K[KeFH
+[?2004lUID          PID    PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+root           2       0  0     0     0   0 мар28 ?     00:00:00 [kthreadd]
+root           3       2  0     0     0   0 мар28 ?     00:00:00   [pool_workqueue_release]
+root           4       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-rcu_g]
+root           5       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-rcu_p]
+root           6       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-slub_]
+root           7       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-netns]
+root          12       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-mm_pe]
+root          13       2  0     0     0   0 мар28 ?     00:00:00   [rcu_tasks_kthread]
+root          14       2  0     0     0   0 мар28 ?     00:00:00   [rcu_tasks_rude_kthread]
+root          15       2  0     0     0   0 мар28 ?     00:00:00   [rcu_tasks_trace_kthread]
+root          16       2  0     0     0   0 мар28 ?     00:00:37   [ksoftirqd/0]
+root          17       2  0     0     0   0 мар28 ?     00:00:49   [rcu_preempt]
+root          18       2  0     0     0   0 мар28 ?     00:00:00   [migration/0]
+root          19       2  0     0     0   0 мар28 ?     00:00:00   [idle_inject/0]
+root          20       2  0     0     0   0 мар28 ?     00:00:00   [cpuhp/0]
+root          21       2  0     0     0   0 мар28 ?     00:00:00   [kdevtmpfs]
+root          22       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-inet_]
+root          24       2  0     0     0   0 мар28 ?     00:00:00   [kauditd]
+root          25       2  0     0     0   0 мар28 ?     00:00:00   [khungtaskd]
+root          26       2  0     0     0   0 мар28 ?     00:00:00   [oom_reaper]
+root          28       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-write]
+root          29       2  0     0     0   0 мар28 ?     00:00:16   [kcompactd0]
+root          30       2  0     0     0   0 мар28 ?     00:00:00   [ksmd]
+root          31       2  0     0     0   0 мар28 ?     00:00:00   [khugepaged]
+root          32       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-kinte]
+root          33       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-kbloc]
+root          34       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-blkcg]
+root          35       2  0     0     0   0 мар28 ?     00:00:00   [irq/9-acpi]
+root          36       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-tpm_d]
+root          37       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-ata_s]
+root          38       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-md]
+root          39       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-md_bi]
+root          40       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-edac-]
+root          41       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-devfr]
+root          42       2  0     0     0   0 мар28 ?     00:00:00   [watchdogd]
+root          44       2  0     0     0   0 мар28 ?     00:00:20   [kswapd0]
+root          45       2  0     0     0   0 мар28 ?     00:00:00   [ecryptfs-kthread]
+root          46       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-kthro]
+root          47       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-acpi_]
+root          48       2  0     0     0   0 мар28 ?     00:00:00   [scsi_eh_0]
+root          49       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-scsi_]
+root          50       2  0     0     0   0 мар28 ?     00:00:00   [scsi_eh_1]
+root          51       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-scsi_]
+root          54       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-mld]
+root          55       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-ipv6_]
+root          63       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-kstrp]
+root          65       2  0     0     0   0 мар28 ?     00:00:00   [kworker/u3:0]
+root          78       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-charg]
+root         121       2  0     0     0   0 мар28 ?     00:00:00   [scsi_eh_2]
+root         122       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-scsi_]
+root         155       2  0     0     0   0 мар28 ?     00:00:09   [jbd2/sda3-8]
+root         156       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-ext4-]
+root         226       2  0     0     0   0 мар28 ?     00:00:00   [irq/18-vmwgfx]
+root         227       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-ttm]
+root         318       2  0     0     0   0 мар28 ?     00:00:00   [kworker/R-crypt]
+root       67494       2  0     0     0   0 мар29 ?     00:00:00   [kworker/R-uas]
+root      207988       2  0     0     0   0 мар29 ?     00:00:06   [kworker/0:2H-kblockd]
+root      312716       2  0     0     0   0 10:23 ?        00:00:03   [kworker/0:3-events]
+root      312916       2  0     0     0   0 10:23 ?        00:00:00   [kworker/u2:2-events_unbound]
+root      315319       2  0     0     0   0 11:16 ?        00:00:00   [kworker/u2:1-events_unbound]
+root      315446       2  0     0     0   0 11:21 ?        00:00:00   [kworker/0:1H-kblockd]
+root      316472       2  0     0     0   0 11:45 ?        00:00:00   [kworker/u2:4-flush-8:0]
+root      316860       2  0     0     0   0 11:55 ?        00:00:00   [kworker/0:0]
+root           1       0  0 42050 10880   0 мар28 ?     00:00:45 /lib/systemd/systemd --system --deserialize 58 splash
+root         195       1  0 16191 13772   0 мар28 ?     00:00:06   /lib/systemd/systemd-journald
+root         248       1  0  6792  4624   0 мар28 ?     00:00:04   /lib/systemd/systemd-udevd
+systemd+     360       1  0  6484  5736   0 мар28 ?     00:00:02   /lib/systemd/systemd-resolved
+root         453       1  0 60002  5076   0 мар28 ?     00:00:03   /usr/libexec/accounts-daemon
+root         455       1  0   704  1536   0 мар28 ?     00:00:04   /usr/sbin/acpid
+avahi        461       1  0  1908  3072   0 мар28 ?     00:00:01   avahi-daemon: running [user-vb.local]
+avahi        598     461  0  1861  1024   0 мар28 ?     00:00:00     avahi-daemon: chroot helper
+root         469       1  0  2375  1920   0 мар28 ?     00:00:00   /usr/sbin/cron -f -P
+message+     470       1  0  2802  5760   0 мар28 ?     00:00:36   @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-acti
+root         491       1  0 10260  5248   0 мар28 ?     00:00:00   /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         494       1  0 61083 10500   0 мар28 ?     00:00:16   /usr/libexec/polkitd --no-debug
+root         495       1  0 60017  4992   0 мар28 ?     00:00:00   /usr/libexec/power-profiles-daemon
+syslog       506       1  0 55601  3584   0 мар28 ?     00:00:01   /usr/sbin/rsyslogd -n -iNONE
+root         530       1  0 59150  4480   0 мар28 ?     00:00:00   /usr/libexec/switcheroo-control
+root         536       1  0  7966  4608   0 мар28 ?     00:00:01   /lib/systemd/systemd-logind
+root         543       1  0 98311  7716   0 мар28 ?     00:00:03   /usr/libexec/udisks2/udisksd
+root         690       1  0 29539  5632   0 мар28 ?     00:00:00   /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown 
+kernoops     766       1  0  3273  1800   0 мар28 ?     00:00:00   /usr/sbin/kerneloops --test
+kernoops     779       1  0  3273  1828   0 мар28 ?     00:00:00   /usr/sbin/kerneloops
+root        1503       1  0 71023  1664   0 мар28 ?     00:00:52   /usr/bin/VBoxDRMClient
+root        1506       1  0 88921  2944   0 мар28 ?     00:00:20   /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+root        2001       1  0 60337  5504   0 мар28 ?     00:00:00   /usr/sbin/gdm3
+root        2332    2001  0 42685  4996   0 мар28 ?     00:00:00     gdm-session-worker [pam/gdm-password]
+user        2377    2332  0 40599  3840   0 мар28 tty2  00:00:00       /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /us
+user        2389    2377  0 55762  6656   0 мар28 tty2  00:00:00         /usr/libexec/gnome-session-binary --session=ubuntu
+rtkit       2029       1  0 38501  2816   0 мар28 ?     00:00:01   /usr/libexec/rtkit-daemon
+root        2104       1  0 60586  5120   0 мар28 ?     00:00:02   /usr/libexec/upowerd
+colord      2266       1  0 149522 7972   0 мар28 ?     00:00:00   /usr/libexec/colord
+user        2343       1  0  4810  6784   0 мар28 ?     00:00:03   /lib/systemd/systemd --user
+user        2344    2343  0 26131  1492   0 мар28 ?     00:00:00     (sd-pam)
+user        2350    2343  0  9894  2944   0 мар28 ?     00:00:00     /usr/bin/pipewire
+user        2351    2343  0  5866  2688   0 мар28 ?     00:00:00     /usr/bin/pipewire-media-session
+user        2352    2343  0 552279 11624  0 мар28 ?     00:10:38     /usr/bin/pulseaudio --daemonize=no --log-target=journal
+user        2366    2343  0  2527  5172   0 мар28 ?     00:00:08     /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --s
+user        2369    2343  0 155002 5248   0 мар28 ?     00:00:00     /usr/libexec/xdg-document-portal
+root        2380    2369  0   699  1408   0 мар28 ?     00:00:00       fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal
+user        2372    2343  0 59038  3712   0 мар28 ?     00:00:00     /usr/libexec/xdg-permission-store
+user        2439    2343  0 22979  3584   0 мар28 ?     00:00:00     /usr/libexec/gnome-session-ctl --monitor
+user        2453    2343  0 60188  5248   0 мар28 ?     00:00:00     /usr/libexec/gvfsd
+user        2688    2453  0 78748  5888   0 мар28 ?     00:00:00       /usr/libexec/gvfsd-trash --spawner :1.14 /org/gtk/gvfs/exec_spaw/0
+user       23871    2453  0 70427  5248   0 мар28 ?     00:00:00       /usr/libexec/gvfsd-http --spawner :1.14 /org/gtk/gvfs/exec_spaw/1
+user       67457    2453  0 97185  4992   0 мар29 ?     00:00:00       /usr/libexec/gvfsd-network --spawner :1.14 /org/gtk/gvfs/exec_spaw/2
+user       67472    2453  0 79208  5632   0 мар29 ?     00:00:00       /usr/libexec/gvfsd-dnssd --spawner :1.14 /org/gtk/gvfs/exec_spaw/4
+user        2464    2343  0 113915 4224   0 мар28 ?     00:00:00     /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+user        2466    2343  0 148256 8448   0 мар28 ?     00:00:00     /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+user        2502    2466  0 77407  5632   0 мар28 ?     00:00:00       /usr/libexec/at-spi-bus-launcher --launch-immediately
+user        2521    2502  0  2141  3328   0 мар28 ?     00:00:00         /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessi
+user        2755    2466  0 58068  5120   0 мар28 ?     00:00:00       /usr/libexec/gsd-disk-utility-notify
+user        2788    2466  0 205641 16716  0 мар28 ?     00:00:01       /usr/libexec/evolution-data-server/evolution-alarm-notify
+user        3888    2466  0 104968 16152  0 мар28 ?     00:00:04       update-notifier
+user        2508    2343  9 1091436 472424 0 мар28 ?    03:54:43     /usr/bin/gnome-shell
+user        2867    2508  0 52645  9992   0 мар28 ?     00:02:57       /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1
+user        3023    2508  0 698746 42212  0 мар28 ?     00:00:35       gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P 
+user      129593    2508  2 3206496 555476 0 мар29 ?    00:42:40       /snap/firefox/4848/usr/lib/firefox/firefox
+user      129713  129593  0 52348 23040   0 мар29 ?     00:00:01         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -parentBuildID
+user      129727  129593  0 628573 159072 0 мар29 ?     00:01:41         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 1 -is
+user      129764  129593  0 611585 86404  0 мар29 ?     00:01:01         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 2 -is
+user      130034  129593  0 87661 25624   0 мар29 ?     00:00:04         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -parentBuildID
+user      130246  129593  0 96594 47500   0 мар29 ?     00:00:57         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -parentBuildID
+user      131105  129593  0 661143 60704  0 мар29 ?     00:00:57         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 28 -i
+user      131110  129593  0 650482 57744  0 мар29 ?     00:04:35         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 29 -i
+user      131136  129593  0 625450 66108  0 мар29 ?     00:02:19         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 30 -i
+user      160884  129593  0 641400 70212  0 мар29 ?     00:03:05         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 43 -i
+user      225007  129593  0 627842 52852  0 мар29 ?     00:00:52         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 96 -i
+user      231006  129593  1 679909 167064 0 00:08 ?        00:07:19         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 123 -
+user      232674  129593  0 625882 54784  0 00:13 ?        00:01:29         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 124 -
+user      232700  129593  0 599961 42412  0 00:13 ?        00:00:15         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 125 -
+user      232735  129593  0 602998 45832  0 00:13 ?        00:00:16         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 126 -
+user      232810  129593  0 599540 42316  0 00:14 ?        00:00:15         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 127 -
+user      232852  129593  0 632383 106196 0 00:14 ?        00:00:32         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 128 -
+user      261662  129593  0 623315 77568  0 04:05 ?        00:00:17         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 171 -
+user      262607  129593  0 604158 46768  0 04:13 ?        00:00:11         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 172 -
+user      266757  129593  0 605456 48732  0 05:32 ?        00:00:08         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 182 -
+user      266809  129593  0 641248 80924  0 05:32 ?        00:00:27         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 184 -
+user      307796  129593  1 684120 331680 0 09:14 ?        00:02:52         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 213 -
+user      310919  129593  0 597483 73260  0 09:37 ?        00:00:03         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 229 -
+user      311015  129593  0 597482 73100  0 09:39 ?        00:00:03         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 230 -
+user      311019  129593  0 597483 72584  0 09:39 ?        00:00:02         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 231 -
+user        2543    2343  0 145735 5120   0 мар28 ?     00:00:00     /usr/libexec/gnome-shell-calendar-server
+user        2549    2343  0 169751 8192   0 мар28 ?     00:00:00     /usr/libexec/evolution-source-registry
+user        2555    2343  0 145491 8704   0 мар28 ?     00:00:00     /usr/libexec/goa-daemon
+user        2556    2343  0 39269  4480   0 мар28 ?     00:00:00     /usr/libexec/dconf-service
+user        2561    2343  0 181489 10240  0 мар28 ?     00:00:00     /usr/libexec/evolution-calendar-factory
+user        2562    2343  0 97531  7936   0 мар28 ?     00:00:07     /usr/libexec/gvfs-udisks2-volume-monitor
+user        2576    2343  0 84602  7040   0 мар28 ?     00:00:01     /usr/libexec/goa-identity-service
+user        2586    2343  0 172201 8064   0 мар28 ?     00:00:00     /usr/libexec/evolution-addressbook-factory
+user        2668    2343  0 59356  4480   0 мар28 ?     00:00:00     /usr/libexec/gvfs-gphoto2-volume-monitor
+user        2672    2343  0 59117  4608   0 мар28 ?     00:00:00     /usr/libexec/gvfs-mtp-volume-monitor
+user        2676    2343  0 59160  4352   0 мар28 ?     00:00:00     /usr/libexec/gvfs-goa-volume-monitor
+user        2680    2343  0 78804  4352   0 мар28 ?     00:00:07     /usr/libexec/gvfs-afc-volume-monitor
+user        2698    2343  0 631447 6540   0 мар28 ?     00:00:00     /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+user        2700    2343  0 40672  5504   0 мар28 ?     00:00:00     /usr/libexec/at-spi2-registryd --use-gnome-session
+user        2709    2343  0   723  1280   0 мар28 ?     00:00:00     sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11"
+user        2712    2709  0 97260  6512   0 мар28 ?     00:01:56       /usr/bin/ibus-daemon --panel disable
+user        2792    2712  0 40872  4224   0 мар28 ?     00:00:00         /usr/libexec/ibus-memconf
+user        2793    2712  0 87156 14360   0 мар28 ?     00:00:18         /usr/libexec/ibus-extension-gtk3
+user        2877    2712  0 40972  5504   0 мар28 ?     00:00:35         /usr/libexec/ibus-engine-simple
+user        2710    2343  0 77610  4480   0 мар28 ?     00:00:00     /usr/libexec/gsd-a11y-settings
+user        2713    2343  0 149835 13828  0 мар28 ?     00:00:01     /usr/libexec/gsd-color
+user        2714    2343  0 93869  6784   0 мар28 ?     00:00:00     /usr/libexec/gsd-datetime
+user        2717    2343  0 77983  5248   0 мар28 ?     00:00:04     /usr/libexec/gsd-housekeeping
+user        2725    2343  0 103784 11892  0 мар28 ?     00:00:00     /usr/libexec/gsd-keyboard
+user        2731    2343  0 179380 13668  0 мар28 ?     00:00:01     /usr/libexec/gsd-media-keys
+user        2735    2343  0 131276 13560  0 мар28 ?     00:00:01     /usr/libexec/gsd-power
+user        2736    2343  0 62465  6656   0 мар28 ?     00:00:00     /usr/libexec/gsd-print-notifications
+user        2740    2343  0 114466 4480   0 мар28 ?     00:00:00     /usr/libexec/gsd-rfkill
+user        2743    2343  0 59106  4352   0 мар28 ?     00:00:00     /usr/libexec/gsd-screensaver-proxy
+user        2744    2343  0 116454 6528   0 мар28 ?     00:00:00     /usr/libexec/gsd-sharing
+user        2745    2343  0 78080  4864   0 мар28 ?     00:00:00     /usr/libexec/gsd-smartcard
+user        2756    2343  0 79839  5888   0 мар28 ?     00:00:00     /usr/libexec/gsd-sound
+user        2764    2343  0 103798 12280  0 мар28 ?     00:00:00     /usr/libexec/gsd-wacom
+user        2796    2343  0 59317  4736   0 мар28 ?     00:00:00     /usr/libexec/ibus-portal
+user        2848    2343  0  5016   768   0 мар28 ?     00:00:00     /usr/bin/VBoxClient --clipboard
+user        2849    2848  0 54563  2176   0 мар28 ?     00:00:00       /usr/bin/VBoxClient --clipboard
+user        2858    2343  0 85592  6912   0 мар28 ?     00:00:00     /usr/libexec/gsd-printer
+user        2885    2343  0 151256 16248  0 мар28 ?     00:00:01     /usr/libexec/gsd-xsettings
+user        2902    2343  0 155955 7424   0 мар28 ?     00:00:02     /usr/libexec/xdg-desktop-portal
+user        2910    2343  0 171415 26360  0 мар28 ?     00:00:10     /usr/libexec/xdg-desktop-portal-gnome
+user        2942    2343  0 649884 6552   0 мар28 ?     00:00:00     /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+user        2972    2343  0 67193 12896   0 мар28 ?     00:00:00     /usr/libexec/ibus-x11
+user        2978    2343  0 182458 20080  0 мар28 ?     00:00:27     /usr/libexec/tracker-miner-fs-3
+user        2993    2343  0  5016   896   0 мар28 ?     00:00:00     /usr/bin/VBoxClient --seamless
+user        2994    2993  0 54588  1792   0 мар28 ?     00:01:12       /usr/bin/VBoxClient --seamless
+user        3002    2343  0  5016   924   0 мар28 ?     00:00:00     /usr/bin/VBoxClient --draganddrop
+user        3003    3002  0 54717  1820   0 мар28 ?     00:04:05       /usr/bin/VBoxClient --draganddrop
+user        3011    2343  0  5016   924   0 мар28 ?     00:00:00     /usr/bin/VBoxClient --vmsvga-session
+user        3012    3011  0 38968  2716   0 мар28 ?     00:00:13       /usr/bin/VBoxClient --vmsvga-session
+user        3035    2343  0 104442 13936  0 мар28 ?     00:00:01     /usr/libexec/xdg-desktop-portal-gtk
+user        3051    2343  0 40792  4468   0 мар28 ?     00:00:00     /usr/libexec/gvfsd-metadata
+user        3075    2343  0 151441 56256  0 мар28 ?     00:14:40     /usr/libexec/gnome-terminal-server
+user      171750    3075  0  2787  2432   0 мар29 pts/3 00:00:00       bash
+user      222070    3075  0  2853  2816   0 мар29 pts/0 00:00:00       bash
+user      309222    3075  0  3222  7236   0 09:20 pts/1    00:00:01       bash
+user      317156  309222  0  2098  2432   0 12:05 pts/1    00:00:00         script ps_log.txt
+user      317157  317156  0  2821  5504   0 12:05 pts/2    00:00:00           bash -i
+user      317173  317157  0  3254  3840   0 12:06 pts/2    00:00:00             ps -eFH
+user        3435    2343  0 291194 9208   0 мар28 ?     00:00:02     /usr/bin/snap userd
+user        3942    2343  0 29463  3252   0 мар28 ?     00:00:01     /usr/bin/speech-dispatcher -s -t 0
+user        3953    3942  0     0     0   0 мар28 ?     00:00:00       [sd_espeak-ng-mb] <defunct>
+user        3956    3942  0 26398  3584   0 мар28 ?     00:00:00       /usr/lib/speech-dispatcher-modules/sd_espeak-ng /etc/speech-dispatcher/m
+user        3959    3942  0 89555  3584   0 мар28 ?     00:00:11       /usr/lib/speech-dispatcher-modules/sd_dummy /etc/speech-dispatcher/modul
+user        4214    2343  0 184325 43416  0 мар28 ?     00:12:46     /usr/bin/gedit --gapplication-service
+user       97016    2343  0  9782   896   0 мар29 ?     00:00:00     /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+user       97171   97016  0 107310 4612   0 мар29 ?     00:00:01       /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+user      101026    2343  0 20998  1536   0 мар29 ?     00:00:00     gpg-agent --homedir /home/user/.local/share/torbrowser/gnupg_homedir --use
+user      287482    2343  0 186988 64932  0 07:39 ?        00:00:08     /usr/bin/nautilus --gapplication-service
+user        2365       1  0 133957 6176   0 мар28 ?     00:00:00   /usr/bin/gnome-keyring-daemon --daemonize --login
+user        3118    2365  0  2022  3456   0 мар28 ?     00:00:02     /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+root       24864       1  0 79493  5360   0 мар28 ?     00:00:00   /usr/sbin/ModemManager
+debian-+  100891       1  0 21541  5120   0 мар29 ?     00:00:13   /usr/bin/tor --defaults-torrc /usr/share/tor/tor-service-defaults-torrc -f /
+root      185548       1  0 74590  7332   0 мар29 ?     00:00:01   /usr/libexec/packagekitd
+root      205556       1  0 117454 89232  0 мар29 ?     00:00:16   /usr/libexec/fwupd/fwupd
+systemd+  268826       1  0  3709  4864   0 05:36 ?        00:00:27   /lib/systemd/systemd-oomd
+root      283715       1  0 136959 12472  0 07:23 ?        00:00:01   /usr/sbin/NetworkManager --no-daemon
+root      286462       1  0  4126  3328   0 07:30 ?        00:00:00   /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root      299586       1  0 311952 32932  0 08:51 ?        00:00:01   /usr/lib/snapd/snapd
+root      316221       1  0 18255 13824   0 11:45 ?        00:00:00   /usr/sbin/cupsd -l
+root      316253       1  0 43015 11392   0 11:45 ?        00:00:00   /usr/sbin/cups-browsed
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ ps -eFH "[K| grep user
+[?2004lavahi        461       1  0  1908  3072   0 мар28 ?     00:00:01   avahi-daemon: running [[01;31m[Kuser[m[K-vb.local]
+[01;31m[Kuser[m[K        2377    2332  0 40599  3840   0 мар28 tty2  00:00:00       /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+[01;31m[Kuser[m[K        2389    2377  0 55762  6656   0 мар28 tty2  00:00:00         /usr/libexec/gnome-session-binary --session=ubuntu
+[01;31m[Kuser[m[K        2343       1  0  4810  6784   0 мар28 ?     00:00:03   /lib/systemd/systemd --[01;31m[Kuser[m[K
+[01;31m[Kuser[m[K        2344    2343  0 26131  1492   0 мар28 ?     00:00:00     (sd-pam)
+[01;31m[Kuser[m[K        2350    2343  0  9894  2944   0 мар28 ?     00:00:00     /usr/bin/pipewire
+[01;31m[Kuser[m[K        2351    2343  0  5866  2688   0 мар28 ?     00:00:00     /usr/bin/pipewire-media-session
+[01;31m[Kuser[m[K        2352    2343  0 552279 11624  0 мар28 ?     00:10:39     /usr/bin/pulseaudio --daemonize=no --log-target=journal
+[01;31m[Kuser[m[K        2366    2343  0  2527  5172   0 мар28 ?     00:00:08     /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+[01;31m[Kuser[m[K        2369    2343  0 155002 5248   0 мар28 ?     00:00:00     /usr/libexec/xdg-document-portal
+root        2380    2369  0   699  1408   0 мар28 ?     00:00:00       f[01;31m[Kuser[m[Kmount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/[01;31m[Kuser[m[K/1000/doc
+[01;31m[Kuser[m[K        2372    2343  0 59038  3712   0 мар28 ?     00:00:00     /usr/libexec/xdg-permission-store
+[01;31m[Kuser[m[K        2439    2343  0 22979  3584   0 мар28 ?     00:00:00     /usr/libexec/gnome-session-ctl --monitor
+[01;31m[Kuser[m[K        2453    2343  0 60188  5248   0 мар28 ?     00:00:00     /usr/libexec/gvfsd
+[01;31m[Kuser[m[K        2688    2453  0 78748  5888   0 мар28 ?     00:00:00       /usr/libexec/gvfsd-trash --spawner :1.14 /org/gtk/gvfs/exec_spaw/0
+[01;31m[Kuser[m[K       23871    2453  0 70427  5248   0 мар28 ?     00:00:00       /usr/libexec/gvfsd-http --spawner :1.14 /org/gtk/gvfs/exec_spaw/1
+[01;31m[Kuser[m[K       67457    2453  0 97185  4992   0 мар29 ?     00:00:00       /usr/libexec/gvfsd-network --spawner :1.14 /org/gtk/gvfs/exec_spaw/2
+[01;31m[Kuser[m[K       67472    2453  0 79208  5632   0 мар29 ?     00:00:00       /usr/libexec/gvfsd-dnssd --spawner :1.14 /org/gtk/gvfs/exec_spaw/4
+[01;31m[Kuser[m[K        2464    2343  0 113915 4224   0 мар28 ?     00:00:00     /usr/libexec/gvfsd-fuse /run/[01;31m[Kuser[m[K/1000/gvfs -f
+[01;31m[Kuser[m[K        2466    2343  0 148256 8448   0 мар28 ?     00:00:00     /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+[01;31m[Kuser[m[K        2502    2466  0 77407  5632   0 мар28 ?     00:00:00       /usr/libexec/at-spi-bus-launcher --launch-immediately
+[01;31m[Kuser[m[K        2521    2502  0  2141  3328   0 мар28 ?     00:00:00         /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/[01;31m[Kuser[m[K/1000/at-spi/bus
+[01;31m[Kuser[m[K        2755    2466  0 58068  5120   0 мар28 ?     00:00:00       /usr/libexec/gsd-disk-utility-notify
+[01;31m[Kuser[m[K        2788    2466  0 205641 16716  0 мар28 ?     00:00:01       /usr/libexec/evolution-data-server/evolution-alarm-notify
+[01;31m[Kuser[m[K        3888    2466  0 104968 16152  0 мар28 ?     00:00:04       update-notifier
+[01;31m[Kuser[m[K        2508    2343  9 1091437 472424 0 мар28 ?    03:54:47     /usr/bin/gnome-shell
+[01;31m[Kuser[m[K        2867    2508  0 52645  9992   0 мар28 ?     00:02:57       /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/[01;31m[Kuser[m[K/1000/.mutter-Xwaylandauth.L08QS2 -listen 4 -listen 5 -displayfd 6 -initfd 7
+[01;31m[Kuser[m[K        3023    2508  0 698746 42212  0 мар28 ?     00:00:35       gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:1920:1080:1:27:70:0:0:0
+[01;31m[Kuser[m[K      129593    2508  2 3206500 555120 0 мар29 ?    00:42:41       /snap/firefox/4848/usr/lib/firefox/firefox
+[01;31m[Kuser[m[K      129713  129593  0 52348 23040   0 мар29 ?     00:00:01         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -parentBuildID 20240829143845 -prefsLen 32058 -prefMapSize 255398 -appDir /snap/firefox/4848/usr/lib/firefox/browser {10b7f27f-03ef-4db4-be00-fff3837c04db} 129593 true socket
+[01;31m[Kuser[m[K      129727  129593  0 628573 159584 0 мар29 ?     00:01:41         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 32123 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {82612969-0aca-4315-b512-ec4a78f62893} 129593 true tab
+[01;31m[Kuser[m[K      129764  129593  0 611581 86532  0 мар29 ?     00:01:01         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 32199 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {29b0ac32-0fb7-4465-9516-fb6a925a75a0} 129593 true tab
+[01;31m[Kuser[m[K      130034  129593  0 87661 25624   0 мар29 ?     00:00:04         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -parentBuildID 20240829143845 -sandboxingKind 0 -prefsLen 38785 -prefMapSize 255398 -appDir /snap/firefox/4848/usr/lib/firefox/browser {5786976f-2a44-40a7-a3c8-ce7ae3860506} 129593 true utility
+[01;31m[Kuser[m[K      130246  129593  0 96594 47500   0 мар29 ?     00:00:57         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -parentBuildID 20240829143845 -prefsLen 39255 -prefMapSize 255398 -appDir /snap/firefox/4848/usr/lib/firefox/browser {ca640b61-cf61-4a7f-9fac-05a9b89bcb9b} 129593 true rdd
+[01;31m[Kuser[m[K      131105  129593  0 661147 60704  0 мар29 ?     00:00:57         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 28 -isForBrowser -prefsLen 34156 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {02e78bf8-1fc0-4c28-98b9-c0f8d58bf478} 129593 true tab
+[01;31m[Kuser[m[K      131110  129593  0 650482 57744  0 мар29 ?     00:04:35         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 29 -isForBrowser -prefsLen 34156 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {ff90ee8d-8905-491f-83c9-49ce42bf3f52} 129593 true tab
+[01;31m[Kuser[m[K      131136  129593  0 625446 66236  0 мар29 ?     00:02:19         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 30 -isForBrowser -prefsLen 34156 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {e43cfd2c-2ff7-468c-a8d9-5a966aacf37f} 129593 true tab
+[01;31m[Kuser[m[K      160884  129593  0 641396 70216  0 мар29 ?     00:03:05         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 43 -isForBrowser -prefsLen 34385 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {8dd0e5b4-9030-427b-8fde-337a330f3844} 129593 true tab
+[01;31m[Kuser[m[K      225007  129593  0 627846 52852  0 мар29 ?     00:00:53         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 96 -isForBrowser -prefsLen 34412 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {6c92982a-185b-4f17-81af-0e58d724d20e} 129593 true tab
+[01;31m[Kuser[m[K      231006  129593  1 679657 164136 0 00:08 ?        00:07:20         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 123 -isForBrowser -prefsLen 34363 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {2bc03608-2095-4231-91f8-013b83ff1ad9} 129593 true tab
+[01;31m[Kuser[m[K      232674  129593  0 625886 54664  0 00:13 ?        00:01:29         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 124 -isForBrowser -prefsLen 34409 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {6c384dc0-19ee-4561-bcf1-5fe4ca148080} 129593 true tab
+[01;31m[Kuser[m[K      232700  129593  0 599961 42412  0 00:13 ?        00:00:15         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 125 -isForBrowser -prefsLen 34409 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {cc5d4a08-96f3-4618-947c-77995b56efec} 129593 true tab
+[01;31m[Kuser[m[K      232735  129593  0 602994 45832  0 00:13 ?        00:00:16         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 126 -isForBrowser -prefsLen 34409 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {356751dc-b672-4d34-9323-25cb8cac24cd} 129593 true tab
+[01;31m[Kuser[m[K      232810  129593  0 599540 42316  0 00:14 ?        00:00:15         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 127 -isForBrowser -prefsLen 34409 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {71e02075-e17e-4311-bb14-4680da76335b} 129593 true tab
+[01;31m[Kuser[m[K      232852  129593  0 632383 106196 0 00:14 ?        00:00:32         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 128 -isForBrowser -prefsLen 34409 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {018fe018-8992-4ebe-afdc-314b41dcc404} 129593 true tab
+[01;31m[Kuser[m[K      261662  129593  0 623319 77568  0 04:05 ?        00:00:17         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 171 -isForBrowser -prefsLen 34363 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {011912b1-391a-4d5a-ba65-f9bcd5dd1ae1} 129593 true tab
+[01;31m[Kuser[m[K      262607  129593  0 604158 46768  0 04:13 ?        00:00:11         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 172 -isForBrowser -prefsLen 34363 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {fa94656e-8f7c-4761-ba6b-f97733e9a8bb} 129593 true tab
+[01;31m[Kuser[m[K      266757  129593  0 605456 48732  0 05:32 ?        00:00:08         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 182 -isForBrowser -prefsLen 34363 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {0005284e-24c7-406b-b532-3e95d08072ac} 129593 true tab
+[01;31m[Kuser[m[K      266809  129593  0 641244 80924  0 05:32 ?        00:00:27         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 184 -isForBrowser -prefsLen 34363 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {877eb127-62f0-4338-bd77-818c8023f62a} 129593 true tab
+[01;31m[Kuser[m[K      307796  129593  1 684124 331164 0 09:14 ?        00:02:52         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 213 -isForBrowser -prefsLen 34475 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {d48491af-d51b-4f0e-a121-d1263e2f8518} 129593 true tab
+[01;31m[Kuser[m[K      310919  129593  0 597487 73260  0 09:37 ?        00:00:03         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 229 -isForBrowser -prefsLen 34521 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {1ab468f3-22ab-4bba-85b0-5618f12ecdb9} 129593 true tab
+[01;31m[Kuser[m[K      311015  129593  0 597486 73100  0 09:39 ?        00:00:03         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 230 -isForBrowser -prefsLen 34521 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {6005b411-9c99-4902-b1ff-ae532928cbc5} 129593 true tab
+[01;31m[Kuser[m[K      311019  129593  0 597487 72584  0 09:39 ?        00:00:02         /snap/firefox/4848/usr/lib/firefox/firefox -contentproc -childID 231 -isForBrowser -prefsLen 34521 -prefMapSize 255398 -jsInitLen 234840 -parentBuildID 20240829143845 -greomni /snap/firefox/4848/usr/lib/firefox/omni.ja -appomni /snap/firefox/4848/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/4848/usr/lib/firefox/browser {1951d78b-dc8d-4685-abc8-e82c3559173f} 129593 true tab
+[01;31m[Kuser[m[K        2543    2343  0 145735 5120   0 мар28 ?     00:00:00     /usr/libexec/gnome-shell-calendar-server
+[01;31m[Kuser[m[K        2549    2343  0 169751 8192   0 мар28 ?     00:00:00     /usr/libexec/evolution-source-registry
+[01;31m[Kuser[m[K        2555    2343  0 145491 8704   0 мар28 ?     00:00:00     /usr/libexec/goa-daemon
+[01;31m[Kuser[m[K        2556    2343  0 39269  4480   0 мар28 ?     00:00:00     /usr/libexec/dconf-service
+[01;31m[Kuser[m[K        2561    2343  0 181489 10240  0 мар28 ?     00:00:00     /usr/libexec/evolution-calendar-factory
+[01;31m[Kuser[m[K        2562    2343  0 97531  7936   0 мар28 ?     00:00:07     /usr/libexec/gvfs-udisks2-volume-monitor
+[01;31m[Kuser[m[K        2576    2343  0 84602  7040   0 мар28 ?     00:00:01     /usr/libexec/goa-identity-service
+[01;31m[Kuser[m[K        2586    2343  0 172201 8064   0 мар28 ?     00:00:00     /usr/libexec/evolution-addressbook-factory
+[01;31m[Kuser[m[K        2668    2343  0 59356  4480   0 мар28 ?     00:00:00     /usr/libexec/gvfs-gphoto2-volume-monitor
+[01;31m[Kuser[m[K        2672    2343  0 59117  4608   0 мар28 ?     00:00:00     /usr/libexec/gvfs-mtp-volume-monitor
+[01;31m[Kuser[m[K        2676    2343  0 59160  4352   0 мар28 ?     00:00:00     /usr/libexec/gvfs-goa-volume-monitor
+[01;31m[Kuser[m[K        2680    2343  0 78804  4352   0 мар28 ?     00:00:07     /usr/libexec/gvfs-afc-volume-monitor
+[01;31m[Kuser[m[K        2698    2343  0 631447 6540   0 мар28 ?     00:00:00     /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+[01;31m[Kuser[m[K        2700    2343  0 40672  5504   0 мар28 ?     00:00:00     /usr/libexec/at-spi2-registryd --use-gnome-session
+[01;31m[Kuser[m[K        2709    2343  0   723  1280   0 мар28 ?     00:00:00     sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+[01;31m[Kuser[m[K        2712    2709  0 97260  6512   0 мар28 ?     00:01:56       /usr/bin/ibus-daemon --panel disable
+[01;31m[Kuser[m[K        2792    2712  0 40872  4224   0 мар28 ?     00:00:00         /usr/libexec/ibus-memconf
+[01;31m[Kuser[m[K        2793    2712  0 87156 14360   0 мар28 ?     00:00:18         /usr/libexec/ibus-extension-gtk3
+[01;31m[Kuser[m[K        2877    2712  0 40972  5504   0 мар28 ?     00:00:35         /usr/libexec/ibus-engine-simple
+[01;31m[Kuser[m[K        2710    2343  0 77610  4480   0 мар28 ?     00:00:00     /usr/libexec/gsd-a11y-settings
+[01;31m[Kuser[m[K        2713    2343  0 149835 13828  0 мар28 ?     00:00:01     /usr/libexec/gsd-color
+[01;31m[Kuser[m[K        2714    2343  0 93869  6784   0 мар28 ?     00:00:00     /usr/libexec/gsd-datetime
+[01;31m[Kuser[m[K        2717    2343  0 77983  5248   0 мар28 ?     00:00:04     /usr/libexec/gsd-housekeeping
+[01;31m[Kuser[m[K        2725    2343  0 103784 11892  0 мар28 ?     00:00:00     /usr/libexec/gsd-keyboard
+[01;31m[Kuser[m[K        2731    2343  0 179380 13668  0 мар28 ?     00:00:01     /usr/libexec/gsd-media-keys
+[01;31m[Kuser[m[K        2735    2343  0 131276 13560  0 мар28 ?     00:00:01     /usr/libexec/gsd-power
+[01;31m[Kuser[m[K        2736    2343  0 62465  6656   0 мар28 ?     00:00:00     /usr/libexec/gsd-print-notifications
+[01;31m[Kuser[m[K        2740    2343  0 114466 4480   0 мар28 ?     00:00:00     /usr/libexec/gsd-rfkill
+[01;31m[Kuser[m[K        2743    2343  0 59106  4352   0 мар28 ?     00:00:00     /usr/libexec/gsd-screensaver-proxy
+[01;31m[Kuser[m[K        2744    2343  0 116454 6528   0 мар28 ?     00:00:00     /usr/libexec/gsd-sharing
+[01;31m[Kuser[m[K        2745    2343  0 78080  4864   0 мар28 ?     00:00:00     /usr/libexec/gsd-smartcard
+[01;31m[Kuser[m[K        2756    2343  0 79839  5888   0 мар28 ?     00:00:00     /usr/libexec/gsd-sound
+[01;31m[Kuser[m[K        2764    2343  0 103798 12280  0 мар28 ?     00:00:00     /usr/libexec/gsd-wacom
+[01;31m[Kuser[m[K        2796    2343  0 59317  4736   0 мар28 ?     00:00:00     /usr/libexec/ibus-portal
+[01;31m[Kuser[m[K        2848    2343  0  5016   768   0 мар28 ?     00:00:00     /usr/bin/VBoxClient --clipboard
+[01;31m[Kuser[m[K        2849    2848  0 54563  2176   0 мар28 ?     00:00:00       /usr/bin/VBoxClient --clipboard
+[01;31m[Kuser[m[K        2858    2343  0 85592  6912   0 мар28 ?     00:00:00     /usr/libexec/gsd-printer
+[01;31m[Kuser[m[K        2885    2343  0 151256 16248  0 мар28 ?     00:00:01     /usr/libexec/gsd-xsettings
+[01;31m[Kuser[m[K        2902    2343  0 155955 7424   0 мар28 ?     00:00:02     /usr/libexec/xdg-desktop-portal
+[01;31m[Kuser[m[K        2910    2343  0 171415 26360  0 мар28 ?     00:00:10     /usr/libexec/xdg-desktop-portal-gnome
+[01;31m[Kuser[m[K        2942    2343  0 649884 6552   0 мар28 ?     00:00:00     /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+[01;31m[Kuser[m[K        2972    2343  0 67193 12896   0 мар28 ?     00:00:00     /usr/libexec/ibus-x11
+[01;31m[Kuser[m[K        2978    2343  0 182458 20080  0 мар28 ?     00:00:27     /usr/libexec/tracker-miner-fs-3
+[01;31m[Kuser[m[K        2993    2343  0  5016   896   0 мар28 ?     00:00:00     /usr/bin/VBoxClient --seamless
+[01;31m[Kuser[m[K        2994    2993  0 54588  1792   0 мар28 ?     00:01:12       /usr/bin/VBoxClient --seamless
+[01;31m[Kuser[m[K        3002    2343  0  5016   924   0 мар28 ?     00:00:00     /usr/bin/VBoxClient --draganddrop
+[01;31m[Kuser[m[K        3003    3002  0 54717  1820   0 мар28 ?     00:04:05       /usr/bin/VBoxClient --draganddrop
+[01;31m[Kuser[m[K        3011    2343  0  5016   924   0 мар28 ?     00:00:00     /usr/bin/VBoxClient --vmsvga-session
+[01;31m[Kuser[m[K        3012    3011  0 38968  2716   0 мар28 ?     00:00:13       /usr/bin/VBoxClient --vmsvga-session
+[01;31m[Kuser[m[K        3035    2343  0 104442 13936  0 мар28 ?     00:00:01     /usr/libexec/xdg-desktop-portal-gtk
+[01;31m[Kuser[m[K        3051    2343  0 40792  4468   0 мар28 ?     00:00:00     /usr/libexec/gvfsd-metadata
+[01;31m[Kuser[m[K        3075    2343  0 151441 56384  0 мар28 ?     00:14:40     /usr/libexec/gnome-terminal-server
+[01;31m[Kuser[m[K      171750    3075  0  2787  2432   0 мар29 pts/3 00:00:00       bash
+[01;31m[Kuser[m[K      222070    3075  0  2853  2816   0 мар29 pts/0 00:00:00       bash
+[01;31m[Kuser[m[K      309222    3075  0  3222  7236   0 09:20 pts/1    00:00:01       bash
+[01;31m[Kuser[m[K      317156  309222  0  2098  2432   0 12:05 pts/1    00:00:00         script ps_log.txt
+[01;31m[Kuser[m[K      317157  317156  0  2821  5504   0 12:05 pts/2    00:00:00           bash -i
+[01;31m[Kuser[m[K      317217  317157  0  3254  3840   0 12:07 pts/2    00:00:00             ps -eFH
+[01;31m[Kuser[m[K      317218  317157  0  2304  2560   0 12:07 pts/2    00:00:00             grep --color=auto [01;31m[Kuser[m[K
+[01;31m[Kuser[m[K        3435    2343  0 291194 9208   0 мар28 ?     00:00:02     /usr/bin/snap [01;31m[Kuser[m[Kd
+[01;31m[Kuser[m[K        3942    2343  0 29463  3252   0 мар28 ?     00:00:01     /usr/bin/speech-dispatcher -s -t 0
+[01;31m[Kuser[m[K        3953    3942  0     0     0   0 мар28 ?     00:00:00       [sd_espeak-ng-mb] <defunct>
+[01;31m[Kuser[m[K        3956    3942  0 26398  3584   0 мар28 ?     00:00:00       /usr/lib/speech-dispatcher-modules/sd_espeak-ng /etc/speech-dispatcher/modules/espeak-ng.conf
+[01;31m[Kuser[m[K        3959    3942  0 89555  3584   0 мар28 ?     00:00:11       /usr/lib/speech-dispatcher-modules/sd_dummy /etc/speech-dispatcher/modules/dummy.conf
+[01;31m[Kuser[m[K        4214    2343  0 184325 43416  0 мар28 ?     00:12:46     /usr/bin/gedit --gapplication-service
+[01;31m[Kuser[m[K       97016    2343  0  9782   896   0 мар29 ?     00:00:00     /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+[01;31m[Kuser[m[K       97171   97016  0 107310 4612   0 мар29 ?     00:00:01       /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+[01;31m[Kuser[m[K      101026    2343  0 20998  1536   0 мар29 ?     00:00:00     gpg-agent --homedir /home/[01;31m[Kuser[m[K/.local/share/torbrowser/gnupg_homedir --use-standard-socket --daemon
+[01;31m[Kuser[m[K      287482    2343  0 186988 64932  0 07:39 ?        00:00:08     /usr/bin/nautilus --gapplication-service
+[01;31m[Kuser[m[K        2365       1  0 133957 6176   0 мар28 ?     00:00:00   /usr/bin/gnome-keyring-daemon --daemonize --login
+[01;31m[Kuser[m[K        3118    2365  0  2022  3456   0 мар28 ?     00:00:02     /usr/bin/ssh-agent -D -a /run/[01;31m[Kuser[m[K/1000/keyring/.ssh
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ top &
+[?2004l[1] 317280
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [?1l>fg [K[K[Kjobss[K -l
+[?2004l[1]+ 317280 Stopped (signal)        top
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ kill %1
+[?2004l[?1l>
+[1]+  Done                    top
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [?2004lCommand 'jof' not found, did you mean:
+  command 'jo' from snap jo (1.9)
+  command 'aof' from snap aof (0.3.1)
+  command 'joe' from deb joe (4.6-1build2)
+  command 'joe' from deb joe-jupp (3.1.40-1)
+  command 'jo' from deb jo (1.4-1)
+  command 'jot' from deb athena-jot (9.0-8)
+See 'snap info <snapname>' for additional versions.
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [?2004l[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [?2004l[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [?2004l[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [?2004l[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [?2004l[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [?2004ldexit: command not found
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson4[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson4[00m$ [?2004lexit
+
+Script done on 2025-03-30 12:11:45+03:00 [COMMAND_EXIT_CODE="127"]
