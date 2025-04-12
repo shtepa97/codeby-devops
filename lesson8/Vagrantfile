@@ -1,0 +1,58 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.define "server" do |server|
+    server.vm.box = "ubuntu/jammy64"
+    server.vm.hostname = "server"
+
+    server.vm.network "private_network", ip: "192.168.0.10"
+
+    server.vm.provision "shell", inline: <<-SHELL
+	
+      sudo apt-get update
+      sudo apt-get install -y apache2 openssl
+
+      sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+        -keyout /etc/ssl/private/mydomain.key \
+        -out /etc/ssl/certs/mydomain.crt \
+        -subj "/C=US/ST=State/L=City/O=Organization/OU=Unit/CN=mydomain.local"
+
+      sudo a2enmod ssl
+      echo "<VirtualHost *:80>
+          ServerName mydomain.local
+          Redirect permanent / https://mydomain.local/
+      </VirtualHost>
+
+      <VirtualHost *:443>
+          ServerName mydomain.local
+          DocumentRoot /var/www/html
+          SSLEngine on
+          SSLCertificateFile /etc/ssl/certs/mydomain.crt
+          SSLCertificateKeyFile /etc/ssl/private/mydomain.key
+          Redirect permanent /www.mydomain.local https://mydomain.local/
+      </VirtualHost>" | sudo tee /etc/apache2/sites-available/mydomain.conf
+
+      sudo a2ensite mydomain.conf
+      sudo systemctl restart apache2
+    SHELL
+  end
+
+  config.vm.define "client" do |client|
+    client.vm.box = "ubuntu/jammy64" # Используем Ubuntu 22.04
+    client.vm.hostname = "client"
+
+    client.vm.network "private_network", ip: "192.168.0.11"
+
+    client.vm.provision "shell", inline: <<-SHELL
+      
+      sudo apt-get update
+
+      echo "192.168.0.10 mydomain.local" | sudo tee -a /etc/hosts
+
+      sudo cp /vagrant/mydomain.crt /usr/local/share/ca-certificates/mydomain.crt
+      sudo update-ca-certificates
+    SHELL
+  end
+end
