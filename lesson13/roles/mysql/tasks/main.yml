@@ -1,0 +1,90 @@
+---
+- name: Include OS-specific variables
+  include_vars: "{{ ansible_distribution }}.yml"
+
+- name: Install MySQL packages
+  package:
+    name: "{{ mysql_packages }}"
+    state: present
+
+- name: Ensure MySQL is running and enabled
+  service:
+    name: "{{ mysql_service_name }}"
+    state: started
+    enabled: yes
+
+- name: Secure MySQL installation
+  when: not mysql_secure_installation_done.stat.exists
+  block:
+    - name: Change root password
+      mysql_user:
+        name: root
+        host: "{{ item }}"
+        password: "{{ mysql_root_password }}"
+        check_implicit_admin: yes
+        login_unix_socket: "{{ mysql_unix_socket | default(omit) }}"
+      loop:
+        - "localhost"
+        - "127.0.0.1"
+        - "::1"
+
+    - name: Remove anonymous users
+      mysql_user:
+        name: ''
+        host: "{{ item }}"
+        state: absent
+      loop:
+        - "localhost"
+        - "127.0.0.1"
+        - "::1"
+
+    - name: Remove test database
+      mysql_db:
+        name: test
+        state: absent
+
+    - name: Create flag file
+      file:
+        path: /root/.mysql_secure_installation
+        state: touch
+  tags:
+    - mysql_secure
+
+- name: Configure MySQL
+  template:
+    src: my.cnf.j2
+    dest: "{{ mysql_config_file }}"
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart mysql
+
+- name: Create databases
+  mysql_db:
+    name: "{{ item.name }}"
+    encoding: "{{ item.encoding | default(omit) }}"
+    collation: "{{ item.collation | default(omit) }}"
+    state: present
+  loop: "{{ mysql_databases }}"
+
+- name: Create users with privileges
+  mysql_user:
+    name: "{{ item.name }}"
+    password: "{{ item.password }}"
+    priv: "{{ item.priv }}"
+    host: "{{ item.host | default('localhost') }}"
+    state: present
+  loop: "{{ mysql_users }}"
+
+- name: Check if secure installation was done
+  stat:
+    path: /root/.mysql_secure_installation
+  register: mysql_secure_installation_done
+
+- name: Flush privileges
+  mysql_query:
+    login_user: root
+    login_password: "{{ mysql_root_password }}"
+    query: "FLUSH PRIVILEGES"
+
+- meta: flush_handlers
