@@ -1,0 +1,8 @@
+---
+mysql_packages:
+  - mariadb-server
+  - mariadb
+  - python3-PyMySQL
+mysql_service_name: mariadb
+mysql_config_file: /etc/my.cnf
+mysql_unix_socket: /var/lib/mysql/mysql.sock

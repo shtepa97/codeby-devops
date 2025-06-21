@@ -1,0 +1,927 @@
+Script started on 2025-06-21 13:38:06+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="195" LINES="48"]
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ [7mcurl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccurl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+[?2004l
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  126M    0 15112    0     0  11790      0  3:07:40  0:00:01  3:07:39 11787
+  0  126M    0  241k    0     0   106k      0  0:20:21  0:00:02  0:20:19  106k
+  1  126M    1 1870k    0     0   572k      0  0:03:46  0:00:03  0:03:43  571k
+  5  126M    5 6606k    0     0  1444k      0  0:01:29  0:00:04  0:01:25 1444k
+ 10  126M   10 13.1M    0     0  2548k      0  0:00:50  0:00:05  0:00:45 2726k
+ 16  126M   16 20.2M    0     0  3311k      0  0:00:39  0:00:06  0:00:33 4157k
+ 21  126M   21 27.1M    0     0  3818k      0  0:00:33  0:00:07  0:00:26 5507k
+ 28  126M   28 36.4M    0     0  4507k      0  0:00:28  0:00:08  0:00:20 7081k
+ 36  126M   36 45.9M    0     0  5072k      0  0:00:25  0:00:09  0:00:16 8604k
+ 42  126M   42 54.0M    0     0  5362k      0  0:00:24  0:00:10  0:00:14 8304k
+ 52  126M   52 66.1M    0     0  6013k      0  0:00:21  0:00:11  0:00:10 9403k
+ 60  126M   60 76.5M    0     0  6354k      0  0:00:20  0:00:12  0:00:08 9996k
+ 68  126M   68 86.2M    0     0  6625k      0  0:00:19  0:00:13  0:00:06  9.8M
+ 75  126M   75 95.8M    0     0  6876k      0  0:00:18  0:00:14  0:00:04  9.9M
+ 83  126M   83  105M    0     0  7087k      0  0:00:18  0:00:15  0:00:03 10.4M
+ 90  126M   90  115M    0     0  7142k      0  0:00:18  0:00:16  0:00:02 9575k
+ 99  126M   99  125M    0     0  7459k      0  0:00:17  0:00:17 --:--:--  9.9M
+100  126M  100  126M    0     0  7470k      0  0:00:17  0:00:17 --:--:-- 10.0M
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ [7msudo install minikube-linux-amd64 /usr/local/bin/minikube[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo install minikube-linux-amd64 /usr/local/bin/minikube
+[?2004l
+[sudo] password for user: 
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ [7mminikube start --driver=docker[27mminikube start --driver=docker
+[?2004l
+😄  minikube v1.36.0 on Ubuntu 22.04
+✨  Using the docker driver based on user configuration
+
+💣  Exiting due to PROVIDER_DOCKER_NEWGRP: "docker version --format <no value>-<no value>:<no value>" exit status 1: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.50/version": dial unix /var/run/docker.sock: connect: permission denied
+💡  Suggestion: Add your user to the 'docker' group: 'sudo usermod -aG docker $USER && newgrp docker'
+📘  Documentation: https://docs.docker.com/engine/install/linux-postinstall/
+
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ [7msudo usermod -aG docker $USER && newgrp docker[27msudo usermod -aG docker $USER && newgrp docker[1P[1P[1P[1P[1P[1@u[1@s[1@e[1@r
+[?2004l
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ ssh vpsd[4Pexitdocker volume lsexit[Kssh vpsd[Kssh vpsd[4Pexitdocker volume ls[3@container[C[C[Crun -d --name wp-db --network wp-net -v wp-db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=rootpass -e MYSQL_DB=wordpress -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wppass mysql:5.7[A
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ [C[C[C[C[C[C[Ccontainer rm wp-db [K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Plogs[C[C[C[C[C[C[C[8@container rm[C[C[C[C[C[C[Crun -d --name wp-db --network wp-net -v wp-db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=rootpass -e MYSQL_DB=wordpress -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wppass mysql:5.7[A
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ [C[C[C[C[C[C[Ccontainer ls[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pvolume[C[C[Cexit[Kssh vpsd[K[7mminikube start --driver=docker[27mminikube start --driver=docker
+[?2004l
+😄  minikube v1.36.0 on Ubuntu 22.04
+✨  Using the docker driver based on user configuration
+📌  Using Docker driver with root privileges
+👍  Starting "minikube" primary control-plane node in "minikube" cluster
+🚜  Pulling base image v0.0.47 ...
+💾  Downloading Kubernetes v1.33.1 preload ...
+
+    > gcr.io/k8s-minikube/kicbase...:  0 B [_______________________] ?% ? p/s ?
+    > gcr.io/k8s-minikube/kicbase...:  0 B [_______________________] ?% ? p/s ?
+    > gcr.io/k8s-minikube/kicbase...:  0 B [_______________________] ?% ? p/s ?
+    > gcr.io/k8s-minikube/kicbase...:  0 B [_______________________] ?% ? p/s ?
+    > gcr.io/k8s-minikube/kicbase...:  1.61 KiB / 502.26 MiB [>_] 0.00% ? p/s ?
+    > gcr.io/k8s-minikube/kicbase...:  1.61 KiB / 502.26 MiB [>_] 0.00% ? p/s ?
+    > gcr.io/k8s-minikube/kicbase...:  1.61 KiB / 502.26 MiB  0.00% 2.68 KiB p/
+    > gcr.io/k8s-minikube/kicbase...:  1.61 KiB / 502.26 MiB  0.00% 2.68 KiB p/
+    > gcr.io/k8s-minikube/kicbase...:  1.61 KiB / 502.26 MiB  0.00% 2.68 KiB p/
+    > gcr.io/k8s-minikube/kicbase...:  721.66 KiB / 502.26 MiB  0.14% 79.92 KiB
+    > gcr.io/k8s-minikube/kicbase...:  2.91 MiB / 502.26 MiB  0.58% 79.92 KiB p
+    > gcr.io/k8s-minikube/kicbase...:  5.03 MiB / 502.26 MiB  1.00% 79.92 KiB p
+    > gcr.io/k8s-minikube/kicbase...:  7.10 MiB / 502.26 MiB  1.41% 777.85 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  8.00 MiB / 502.26 MiB  1.59% 777.85 KiB 
+    > preloaded-images-k8s-v18-v1...:  14.78 KiB / 347.04 MiB [>] 0.00% ? p/s ?
+    > gcr.io/k8s-minikube/kicbase...:  8.00 MiB / 502.26 MiB  1.59% 777.85 KiB 
+    > preloaded-images-k8s-v18-v1...:  46.78 KiB / 347.04 MiB [>] 0.01% ? p/s ?
+    > gcr.io/k8s-minikube/kicbase...:  9.29 MiB / 502.26 MiB  1.85% 970.37 KiB 
+    > preloaded-images-k8s-v18-v1...:  78.77 KiB / 347.04 MiB [>] 0.02% ? p/s ?
+    > gcr.io/k8s-minikube/kicbase...:  11.29 MiB / 502.26 MiB  2.25% 970.37 KiB
+    > preloaded-images-k8s-v18-v1...:  126.77 KiB / 347.04 MiB  0.04% 185.75 Ki
+    > gcr.io/k8s-minikube/kicbase...:  13.60 MiB / 502.26 MiB  2.71% 970.37 KiB
+    > preloaded-images-k8s-v18-v1...:  206.77 KiB / 347.04 MiB  0.06% 185.75 Ki
+    > gcr.io/k8s-minikube/kicbase...:  15.64 MiB / 502.26 MiB  3.11% 1.57 MiB p
+    > preloaded-images-k8s-v18-v1...:  302.77 KiB / 347.04 MiB  0.09% 185.75 Ki
+    > gcr.io/k8s-minikube/kicbase...:  17.74 MiB / 502.26 MiB  3.53% 1.57 MiB p
+    > preloaded-images-k8s-v18-v1...:  494.77 KiB / 347.04 MiB  0.14% 213.54 Ki
+    > gcr.io/k8s-minikube/kicbase...:  19.52 MiB / 502.26 MiB  3.89% 1.57 MiB p
+    > preloaded-images-k8s-v18-v1...:  670.77 KiB / 347.04 MiB  0.19% 213.54 Ki
+    > gcr.io/k8s-minikube/kicbase...:  21.44 MiB / 502.26 MiB  4.27% 2.09 MiB p
+    > preloaded-images-k8s-v18-v1...:  670.77 KiB / 347.04 MiB  0.19% 213.54 Ki
+    > gcr.io/k8s-minikube/kicbase...:  23.63 MiB / 502.26 MiB  4.70% 2.09 MiB p
+    > preloaded-images-k8s-v18-v1...:  1.16 MiB / 347.04 MiB  0.33% 273.86 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  25.14 MiB / 502.26 MiB  5.01% 2.09 MiB p
+    > preloaded-images-k8s-v18-v1...:  1.41 MiB / 347.04 MiB  0.40% 273.86 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  26.80 MiB / 502.26 MiB  5.34% 2.53 MiB p
+    > preloaded-images-k8s-v18-v1...:  2.16 MiB / 347.04 MiB  0.62% 273.86 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  28.39 MiB / 502.26 MiB  5.65% 2.53 MiB p
+    > preloaded-images-k8s-v18-v1...:  2.53 MiB / 347.04 MiB  0.73% 407.68 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  29.69 MiB / 502.26 MiB  5.91% 2.53 MiB p
+    > preloaded-images-k8s-v18-v1...:  2.91 MiB / 347.04 MiB  0.84% 407.68 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  30.94 MiB / 502.26 MiB  6.16% 2.81 MiB p
+    > preloaded-images-k8s-v18-v1...:  2.91 MiB / 347.04 MiB  0.84% 407.68 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  32.70 MiB / 502.26 MiB  6.51% 2.81 MiB p
+    > preloaded-images-k8s-v18-v1...:  3.75 MiB / 347.04 MiB  1.08% 515.58 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  34.36 MiB / 502.26 MiB  6.84% 2.81 MiB p
+    > preloaded-images-k8s-v18-v1...:  4.19 MiB / 347.04 MiB  1.21% 515.58 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  36.30 MiB / 502.26 MiB  7.23% 3.19 MiB p
+    > preloaded-images-k8s-v18-v1...:  4.59 MiB / 347.04 MiB  1.32% 515.58 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  38.14 MiB / 502.26 MiB  7.59% 3.19 MiB p
+    > preloaded-images-k8s-v18-v1...:  5.00 MiB / 347.04 MiB  1.44% 619.95 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  39.98 MiB / 502.26 MiB  7.96% 3.19 MiB p
+    > preloaded-images-k8s-v18-v1...:  5.44 MiB / 347.04 MiB  1.57% 619.95 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  41.65 MiB / 502.26 MiB  8.29% 3.58 MiB p
+    > preloaded-images-k8s-v18-v1...:  5.84 MiB / 347.04 MiB  1.68% 619.95 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  43.32 MiB / 502.26 MiB  8.63% 3.58 MiB p
+    > preloaded-images-k8s-v18-v1...:  6.25 MiB / 347.04 MiB  1.80% 717.35 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  45.20 MiB / 502.26 MiB  9.00% 3.58 MiB p
+    > preloaded-images-k8s-v18-v1...:  6.69 MiB / 347.04 MiB  1.93% 717.35 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  46.74 MiB / 502.26 MiB  9.31% 3.89 MiB p
+    > preloaded-images-k8s-v18-v1...:  6.69 MiB / 347.04 MiB  1.93% 717.35 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  48.91 MiB / 502.26 MiB  9.74% 3.89 MiB p
+    > preloaded-images-k8s-v18-v1...:  7.28 MiB / 347.04 MiB  2.10% 784.71 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  50.91 MiB / 502.26 MiB  10.14% 3.89 MiB 
+    > preloaded-images-k8s-v18-v1...:  8.19 MiB / 347.04 MiB  2.36% 784.71 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  52.41 MiB / 502.26 MiB  10.43% 4.26 MiB 
+    > preloaded-images-k8s-v18-v1...:  8.59 MiB / 347.04 MiB  2.48% 784.71 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  54.20 MiB / 502.26 MiB  10.79% 4.26 MiB 
+    > preloaded-images-k8s-v18-v1...:  9.03 MiB / 347.04 MiB  2.60% 926.95 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  56.14 MiB / 502.26 MiB  11.18% 4.26 MiB 
+    > preloaded-images-k8s-v18-v1...:  9.47 MiB / 347.04 MiB  2.73% 926.95 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  57.61 MiB / 502.26 MiB  11.47% 4.54 MiB 
+    > preloaded-images-k8s-v18-v1...:  9.84 MiB / 347.04 MiB  2.84% 926.95 KiB 
+    > gcr.io/k8s-minikube/kicbase...:  59.42 MiB / 502.26 MiB  11.83% 4.54 MiB 
+    > preloaded-images-k8s-v18-v1...:  10.31 MiB / 347.04 MiB  2.97% 1008.00 Ki
+    > gcr.io/k8s-minikube/kicbase...:  61.24 MiB / 502.26 MiB  12.19% 4.54 MiB 
+    > preloaded-images-k8s-v18-v1...:  10.75 MiB / 347.04 MiB  3.10% 1008.00 Ki
+    > gcr.io/k8s-minikube/kicbase...:  63.02 MiB / 502.26 MiB  12.55% 4.83 MiB 
+    > preloaded-images-k8s-v18-v1...:  10.84 MiB / 347.04 MiB  3.12% 1008.00 Ki
+    > gcr.io/k8s-minikube/kicbase...:  64.22 MiB / 502.26 MiB  12.79% 4.83 MiB 
+    > preloaded-images-k8s-v18-v1...:  11.12 MiB / 347.04 MiB  3.21% 1.01 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  65.99 MiB / 502.26 MiB  13.14% 4.83 MiB 
+    > preloaded-images-k8s-v18-v1...:  12.06 MiB / 347.04 MiB  3.48% 1.01 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  67.06 MiB / 502.26 MiB  13.35% 4.94 MiB 
+    > preloaded-images-k8s-v18-v1...:  12.47 MiB / 347.04 MiB  3.59% 1.01 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  69.34 MiB / 502.26 MiB  13.80% 4.94 MiB 
+    > preloaded-images-k8s-v18-v1...:  12.91 MiB / 347.04 MiB  3.72% 1.13 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  70.38 MiB / 502.26 MiB  14.01% 4.94 MiB 
+    > preloaded-images-k8s-v18-v1...:  13.31 MiB / 347.04 MiB  3.84% 1.13 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  72.16 MiB / 502.26 MiB  14.37% 5.18 MiB 
+    > preloaded-images-k8s-v18-v1...:  13.75 MiB / 347.04 MiB  3.96% 1.13 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  73.93 MiB / 502.26 MiB  14.72% 5.18 MiB 
+    > preloaded-images-k8s-v18-v1...:  14.22 MiB / 347.04 MiB  4.10% 1.20 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  75.67 MiB / 502.26 MiB  15.07% 5.18 MiB 
+    > preloaded-images-k8s-v18-v1...:  14.69 MiB / 347.04 MiB  4.23% 1.20 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  77.25 MiB / 502.26 MiB  15.38% 5.39 MiB 
+    > preloaded-images-k8s-v18-v1...:  15.12 MiB / 347.04 MiB  4.36% 1.20 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  79.18 MiB / 502.26 MiB  15.76% 5.39 MiB 
+    > preloaded-images-k8s-v18-v1...:  15.25 MiB / 347.04 MiB  4.39% 1.24 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  80.84 MiB / 502.26 MiB  16.10% 5.39 MiB 
+    > preloaded-images-k8s-v18-v1...:  15.75 MiB / 347.04 MiB  4.54% 1.24 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  82.54 MiB / 502.26 MiB  16.43% 5.62 MiB 
+    > preloaded-images-k8s-v18-v1...:  16.56 MiB / 347.04 MiB  4.77% 1.24 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  84.13 MiB / 502.26 MiB  16.75% 5.62 MiB 
+    > preloaded-images-k8s-v18-v1...:  17.06 MiB / 347.04 MiB  4.92% 1.35 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  85.93 MiB / 502.26 MiB  17.11% 5.62 MiB 
+    > preloaded-images-k8s-v18-v1...:  17.56 MiB / 347.04 MiB  5.06% 1.35 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  87.07 MiB / 502.26 MiB  17.34% 5.74 MiB 
+    > preloaded-images-k8s-v18-v1...:  18.06 MiB / 347.04 MiB  5.20% 1.35 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  88.88 MiB / 502.26 MiB  17.70% 5.74 MiB 
+    > preloaded-images-k8s-v18-v1...:  18.56 MiB / 347.04 MiB  5.35% 1.43 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  91.28 MiB / 502.26 MiB  18.17% 5.74 MiB 
+    > preloaded-images-k8s-v18-v1...:  19.09 MiB / 347.04 MiB  5.50% 1.43 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  92.64 MiB / 502.26 MiB  18.44% 5.96 MiB 
+    > preloaded-images-k8s-v18-v1...:  19.50 MiB / 347.04 MiB  5.62% 1.43 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  93.54 MiB / 502.26 MiB  18.62% 5.96 MiB 
+    > preloaded-images-k8s-v18-v1...:  19.94 MiB / 347.04 MiB  5.74% 1.48 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  96.42 MiB / 502.26 MiB  19.20% 5.96 MiB 
+    > preloaded-images-k8s-v18-v1...:  19.94 MiB / 347.04 MiB  5.74% 1.48 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  97.83 MiB / 502.26 MiB  19.48% 6.15 MiB 
+    > preloaded-images-k8s-v18-v1...:  21.31 MiB / 347.04 MiB  6.14% 1.48 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  99.15 MiB / 502.26 MiB  19.74% 6.15 MiB 
+    > preloaded-images-k8s-v18-v1...:  21.94 MiB / 347.04 MiB  6.32% 1.60 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  100.12 MiB / 502.26 MiB  19.93% 6.15 MiB
+    > preloaded-images-k8s-v18-v1...:  22.22 MiB / 347.04 MiB  6.40% 1.60 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  101.68 MiB / 502.26 MiB  20.24% 6.15 MiB
+    > preloaded-images-k8s-v18-v1...:  22.22 MiB / 347.04 MiB  6.40% 1.60 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  102.96 MiB / 502.26 MiB  20.50% 6.15 MiB
+    > preloaded-images-k8s-v18-v1...:  23.09 MiB / 347.04 MiB  6.65% 1.62 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  104.49 MiB / 502.26 MiB  20.80% 6.15 MiB
+    > preloaded-images-k8s-v18-v1...:  23.94 MiB / 347.04 MiB  6.90% 1.62 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  105.85 MiB / 502.26 MiB  21.07% 6.22 MiB
+    > preloaded-images-k8s-v18-v1...:  24.62 MiB / 347.04 MiB  7.10% 1.62 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  107.19 MiB / 502.26 MiB  21.34% 6.22 MiB
+    > preloaded-images-k8s-v18-v1...:  25.97 MiB / 347.04 MiB  7.48% 1.83 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  108.71 MiB / 502.26 MiB  21.64% 6.22 MiB
+    > preloaded-images-k8s-v18-v1...:  26.59 MiB / 347.04 MiB  7.66% 1.83 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  110.12 MiB / 502.26 MiB  21.92% 6.27 MiB
+    > preloaded-images-k8s-v18-v1...:  27.16 MiB / 347.04 MiB  7.82% 1.83 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  111.49 MiB / 502.26 MiB  22.20% 6.27 MiB
+    > preloaded-images-k8s-v18-v1...:  27.66 MiB / 347.04 MiB  7.97% 1.89 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  112.87 MiB / 502.26 MiB  22.47% 6.27 MiB
+    > preloaded-images-k8s-v18-v1...:  27.72 MiB / 347.04 MiB  7.99% 1.89 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  114.32 MiB / 502.26 MiB  22.76% 6.31 MiB
+    > preloaded-images-k8s-v18-v1...:  27.72 MiB / 347.04 MiB  7.99% 1.89 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  115.82 MiB / 502.26 MiB  23.06% 6.31 MiB
+    > preloaded-images-k8s-v18-v1...:  29.00 MiB / 347.04 MiB  8.36% 1.91 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  117.23 MiB / 502.26 MiB  23.34% 6.31 MiB
+    > preloaded-images-k8s-v18-v1...:  29.31 MiB / 347.04 MiB  8.45% 1.91 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  118.72 MiB / 502.26 MiB  23.64% 6.39 MiB
+    > preloaded-images-k8s-v18-v1...:  29.84 MiB / 347.04 MiB  8.60% 1.91 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  120.06 MiB / 502.26 MiB  23.90% 6.39 MiB
+    > preloaded-images-k8s-v18-v1...:  29.84 MiB / 347.04 MiB  8.60% 1.88 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  121.42 MiB / 502.26 MiB  24.18% 6.39 MiB
+    > preloaded-images-k8s-v18-v1...:  30.12 MiB / 347.04 MiB  8.68% 1.88 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  122.89 MiB / 502.26 MiB  24.47% 6.42 MiB
+    > preloaded-images-k8s-v18-v1...:  30.72 MiB / 347.04 MiB  8.85% 1.88 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  124.22 MiB / 502.26 MiB  24.73% 6.42 MiB
+    > preloaded-images-k8s-v18-v1...:  31.00 MiB / 347.04 MiB  8.93% 1.88 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  125.62 MiB / 502.26 MiB  25.01% 6.42 MiB
+    > preloaded-images-k8s-v18-v1...:  32.16 MiB / 347.04 MiB  9.27% 1.88 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  126.97 MiB / 502.26 MiB  25.28% 6.45 MiB
+    > preloaded-images-k8s-v18-v1...:  32.59 MiB / 347.04 MiB  9.39% 1.88 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  128.00 MiB / 502.26 MiB  25.49% 6.45 MiB
+    > preloaded-images-k8s-v18-v1...:  33.09 MiB / 347.04 MiB  9.54% 1.99 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  128.00 MiB / 502.26 MiB  25.49% 6.45 MiB
+    > preloaded-images-k8s-v18-v1...:  33.41 MiB / 347.04 MiB  9.63% 1.99 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  129.25 MiB / 502.26 MiB  25.73% 6.27 MiB
+    > preloaded-images-k8s-v18-v1...:  33.41 MiB / 347.04 MiB  9.63% 1.99 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  131.10 MiB / 502.26 MiB  26.10% 6.27 MiB
+    > preloaded-images-k8s-v18-v1...:  34.47 MiB / 347.04 MiB  9.93% 2.01 MiB p
+    > gcr.io/k8s-minikube/kicbase...:  132.64 MiB / 502.26 MiB  26.41% 6.27 MiB
+    > preloaded-images-k8s-v18-v1...:  34.91 MiB / 347.04 MiB  10.06% 2.01 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  134.40 MiB / 502.26 MiB  26.76% 6.41 MiB
+    > preloaded-images-k8s-v18-v1...:  35.31 MiB / 347.04 MiB  10.18% 2.01 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  135.98 MiB / 502.26 MiB  27.07% 6.41 MiB
+    > preloaded-images-k8s-v18-v1...:  35.31 MiB / 347.04 MiB  10.18% 1.97 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  137.28 MiB / 502.26 MiB  27.33% 6.41 MiB
+    > preloaded-images-k8s-v18-v1...:  35.44 MiB / 347.04 MiB  10.21% 1.97 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  139.04 MiB / 502.26 MiB  27.68% 6.52 MiB
+    > preloaded-images-k8s-v18-v1...:  37.28 MiB / 347.04 MiB  10.74% 1.97 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  140.29 MiB / 502.26 MiB  27.93% 6.52 MiB
+    > preloaded-images-k8s-v18-v1...:  37.69 MiB / 347.04 MiB  10.86% 2.10 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  142.12 MiB / 502.26 MiB  28.30% 6.52 MiB
+    > preloaded-images-k8s-v18-v1...:  38.31 MiB / 347.04 MiB  11.04% 2.10 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  143.41 MiB / 502.26 MiB  28.55% 6.57 MiB
+    > preloaded-images-k8s-v18-v1...:  38.50 MiB / 347.04 MiB  11.09% 2.10 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  145.04 MiB / 502.26 MiB  28.88% 6.57 MiB
+    > preloaded-images-k8s-v18-v1...:  38.56 MiB / 347.04 MiB  11.11% 2.06 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  146.63 MiB / 502.26 MiB  29.19% 6.57 MiB
+    > preloaded-images-k8s-v18-v1...:  40.03 MiB / 347.04 MiB  11.53% 2.06 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  148.16 MiB / 502.26 MiB  29.50% 6.65 MiB
+    > preloaded-images-k8s-v18-v1...:  40.50 MiB / 347.04 MiB  11.67% 2.06 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  149.83 MiB / 502.26 MiB  29.83% 6.65 MiB
+    > preloaded-images-k8s-v18-v1...:  40.94 MiB / 347.04 MiB  11.80% 2.18 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  151.52 MiB / 502.26 MiB  30.17% 6.65 MiB
+    > preloaded-images-k8s-v18-v1...:  41.47 MiB / 347.04 MiB  11.95% 2.18 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  153.21 MiB / 502.26 MiB  30.50% 6.76 MiB
+    > preloaded-images-k8s-v18-v1...:  41.94 MiB / 347.04 MiB  12.08% 2.18 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  154.77 MiB / 502.26 MiB  30.81% 6.76 MiB
+    > preloaded-images-k8s-v18-v1...:  42.37 MiB / 347.04 MiB  12.21% 2.19 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  156.25 MiB / 502.26 MiB  31.11% 6.76 MiB
+    > preloaded-images-k8s-v18-v1...:  42.91 MiB / 347.04 MiB  12.36% 2.19 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  158.10 MiB / 502.26 MiB  31.48% 6.86 MiB
+    > preloaded-images-k8s-v18-v1...:  43.19 MiB / 347.04 MiB  12.44% 2.19 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  159.70 MiB / 502.26 MiB  31.80% 6.86 MiB
+    > preloaded-images-k8s-v18-v1...:  43.19 MiB / 347.04 MiB  12.44% 2.14 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  161.34 MiB / 502.26 MiB  32.12% 6.86 MiB
+    > preloaded-images-k8s-v18-v1...:  44.00 MiB / 347.04 MiB  12.68% 2.14 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  162.08 MiB / 502.26 MiB  32.27% 6.84 MiB
+    > preloaded-images-k8s-v18-v1...:  45.03 MiB / 347.04 MiB  12.98% 2.14 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  163.33 MiB / 502.26 MiB  32.52% 6.84 MiB
+    > preloaded-images-k8s-v18-v1...:  45.47 MiB / 347.04 MiB  13.10% 2.25 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  165.25 MiB / 502.26 MiB  32.90% 6.84 MiB
+    > preloaded-images-k8s-v18-v1...:  46.00 MiB / 347.04 MiB  13.25% 2.25 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  166.65 MiB / 502.26 MiB  33.18% 6.89 MiB
+    > preloaded-images-k8s-v18-v1...:  46.31 MiB / 347.04 MiB  13.34% 2.25 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  168.51 MiB / 502.26 MiB  33.55% 6.89 MiB
+    > preloaded-images-k8s-v18-v1...:  46.62 MiB / 347.04 MiB  13.43% 2.22 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  170.15 MiB / 502.26 MiB  33.88% 6.89 MiB
+    > preloaded-images-k8s-v18-v1...:  46.84 MiB / 347.04 MiB  13.50% 2.22 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  171.77 MiB / 502.26 MiB  34.20% 7.00 MiB
+    > preloaded-images-k8s-v18-v1...:  47.50 MiB / 347.04 MiB  13.69% 2.22 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  173.36 MiB / 502.26 MiB  34.52% 7.00 MiB
+    > preloaded-images-k8s-v18-v1...:  47.94 MiB / 347.04 MiB  13.81% 2.22 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  174.81 MiB / 502.26 MiB  34.80% 7.00 MiB
+    > preloaded-images-k8s-v18-v1...:  48.28 MiB / 347.04 MiB  13.91% 2.22 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  176.00 MiB / 502.26 MiB  35.04% 7.00 MiB
+    > preloaded-images-k8s-v18-v1...:  48.97 MiB / 347.04 MiB  14.11% 2.22 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  176.08 MiB / 502.26 MiB  35.06% 7.00 MiB
+    > preloaded-images-k8s-v18-v1...:  49.06 MiB / 347.04 MiB  14.14% 2.20 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  177.73 MiB / 502.26 MiB  35.39% 7.00 MiB
+    > preloaded-images-k8s-v18-v1...:  49.06 MiB / 347.04 MiB  14.14% 2.20 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  179.23 MiB / 502.26 MiB  35.68% 6.90 MiB
+    > preloaded-images-k8s-v18-v1...:  50.16 MiB / 347.04 MiB  14.45% 2.20 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  180.88 MiB / 502.26 MiB  36.01% 6.90 MiB
+    > preloaded-images-k8s-v18-v1...:  50.16 MiB / 347.04 MiB  14.45% 2.18 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  182.37 MiB / 502.26 MiB  36.31% 6.90 MiB
+    > preloaded-images-k8s-v18-v1...:  51.19 MiB / 347.04 MiB  14.75% 2.18 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  183.85 MiB / 502.26 MiB  36.60% 6.95 MiB
+    > preloaded-images-k8s-v18-v1...:  51.66 MiB / 347.04 MiB  14.88% 2.18 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  185.43 MiB / 502.26 MiB  36.92% 6.95 MiB
+    > preloaded-images-k8s-v18-v1...:  52.25 MiB / 347.04 MiB  15.06% 2.26 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  186.94 MiB / 502.26 MiB  37.22% 6.95 MiB
+    > preloaded-images-k8s-v18-v1...:  52.81 MiB / 347.04 MiB  15.22% 2.26 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  188.48 MiB / 502.26 MiB  37.53% 7.00 MiB
+    > preloaded-images-k8s-v18-v1...:  53.34 MiB / 347.04 MiB  15.37% 2.26 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  189.98 MiB / 502.26 MiB  37.82% 7.00 MiB
+    > preloaded-images-k8s-v18-v1...:  53.87 MiB / 347.04 MiB  15.52% 2.29 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  191.43 MiB / 502.26 MiB  38.11% 7.00 MiB
+    > preloaded-images-k8s-v18-v1...:  54.25 MiB / 347.04 MiB  15.63% 2.29 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  193.27 MiB / 502.26 MiB  38.48% 7.06 MiB
+    > preloaded-images-k8s-v18-v1...:  54.25 MiB / 347.04 MiB  15.63% 2.29 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  194.85 MiB / 502.26 MiB  38.79% 7.06 MiB
+    > preloaded-images-k8s-v18-v1...:  55.56 MiB / 347.04 MiB  16.01% 2.32 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  196.46 MiB / 502.26 MiB  39.11% 7.06 MiB
+    > preloaded-images-k8s-v18-v1...:  56.12 MiB / 347.04 MiB  16.17% 2.32 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  198.11 MiB / 502.26 MiB  39.44% 7.13 MiB
+    > preloaded-images-k8s-v18-v1...:  56.72 MiB / 347.04 MiB  16.34% 2.32 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  199.71 MiB / 502.26 MiB  39.76% 7.13 MiB
+    > preloaded-images-k8s-v18-v1...:  57.28 MiB / 347.04 MiB  16.51% 2.36 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  201.32 MiB / 502.26 MiB  40.08% 7.13 MiB
+    > preloaded-images-k8s-v18-v1...:  57.87 MiB / 347.04 MiB  16.68% 2.36 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  202.93 MiB / 502.26 MiB  40.40% 7.18 MiB
+    > preloaded-images-k8s-v18-v1...:  58.47 MiB / 347.04 MiB  16.85% 2.36 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  204.51 MiB / 502.26 MiB  40.72% 7.18 MiB
+    > preloaded-images-k8s-v18-v1...:  59.00 MiB / 347.04 MiB  17.00% 2.39 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  206.15 MiB / 502.26 MiB  41.04% 7.18 MiB
+    > preloaded-images-k8s-v18-v1...:  59.66 MiB / 347.04 MiB  17.19% 2.39 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  207.66 MiB / 502.26 MiB  41.35% 7.23 MiB
+    > preloaded-images-k8s-v18-v1...:  59.75 MiB / 347.04 MiB  17.22% 2.39 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  209.32 MiB / 502.26 MiB  41.67% 7.23 MiB
+    > preloaded-images-k8s-v18-v1...:  59.97 MiB / 347.04 MiB  17.28% 2.34 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  210.85 MiB / 502.26 MiB  41.98% 7.23 MiB
+    > preloaded-images-k8s-v18-v1...:  61.81 MiB / 347.04 MiB  17.81% 2.34 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  212.32 MiB / 502.26 MiB  42.27% 7.27 MiB
+    > preloaded-images-k8s-v18-v1...:  62.06 MiB / 347.04 MiB  17.88% 2.34 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  213.62 MiB / 502.26 MiB  42.53% 7.27 MiB
+    > preloaded-images-k8s-v18-v1...:  62.28 MiB / 347.04 MiB  17.95% 2.44 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  214.93 MiB / 502.26 MiB  42.79% 7.27 MiB
+    > preloaded-images-k8s-v18-v1...:  62.94 MiB / 347.04 MiB  18.14% 2.44 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  216.15 MiB / 502.26 MiB  43.04% 7.21 MiB
+    > preloaded-images-k8s-v18-v1...:  62.94 MiB / 347.04 MiB  18.14% 2.44 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  217.62 MiB / 502.26 MiB  43.33% 7.21 MiB
+    > preloaded-images-k8s-v18-v1...:  65.84 MiB / 347.04 MiB  18.97% 2.66 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  218.77 MiB / 502.26 MiB  43.56% 7.21 MiB
+    > preloaded-images-k8s-v18-v1...:  66.66 MiB / 347.04 MiB  19.21% 2.66 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  219.56 MiB / 502.26 MiB  43.71% 7.11 MiB
+    > preloaded-images-k8s-v18-v1...:  67.28 MiB / 347.04 MiB  19.39% 2.66 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  221.59 MiB / 502.26 MiB  44.12% 7.11 MiB
+    > preloaded-images-k8s-v18-v1...:  67.28 MiB / 347.04 MiB  19.39% 2.65 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  222.23 MiB / 502.26 MiB  44.25% 7.11 MiB
+    > preloaded-images-k8s-v18-v1...:  68.34 MiB / 347.04 MiB  19.69% 2.65 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  223.65 MiB / 502.26 MiB  44.53% 7.09 MiB
+    > preloaded-images-k8s-v18-v1...:  69.03 MiB / 347.04 MiB  19.89% 2.65 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  225.10 MiB / 502.26 MiB  44.82% 7.09 MiB
+    > preloaded-images-k8s-v18-v1...:  69.78 MiB / 347.04 MiB  20.11% 2.75 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  226.50 MiB / 502.26 MiB  45.10% 7.09 MiB
+    > preloaded-images-k8s-v18-v1...:  70.00 MiB / 347.04 MiB  20.17% 2.75 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  227.88 MiB / 502.26 MiB  45.37% 7.09 MiB
+    > preloaded-images-k8s-v18-v1...:  70.12 MiB / 347.04 MiB  20.21% 2.75 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  229.25 MiB / 502.26 MiB  45.64% 7.09 MiB
+    > preloaded-images-k8s-v18-v1...:  70.47 MiB / 347.04 MiB  20.31% 2.64 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  230.56 MiB / 502.26 MiB  45.91% 7.09 MiB
+    > preloaded-images-k8s-v18-v1...:  72.12 MiB / 347.04 MiB  20.78% 2.64 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  231.88 MiB / 502.26 MiB  46.17% 7.06 MiB
+    > preloaded-images-k8s-v18-v1...:  72.94 MiB / 347.04 MiB  21.02% 2.64 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  233.27 MiB / 502.26 MiB  46.44% 7.06 MiB
+    > preloaded-images-k8s-v18-v1...:  73.56 MiB / 347.04 MiB  21.20% 2.80 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  234.61 MiB / 502.26 MiB  46.71% 7.06 MiB
+    > preloaded-images-k8s-v18-v1...:  74.19 MiB / 347.04 MiB  21.38% 2.80 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  235.99 MiB / 502.26 MiB  46.98% 7.05 MiB
+    > preloaded-images-k8s-v18-v1...:  74.19 MiB / 347.04 MiB  21.38% 2.80 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  237.60 MiB / 502.26 MiB  47.30% 7.05 MiB
+    > preloaded-images-k8s-v18-v1...:  75.75 MiB / 347.04 MiB  21.83% 2.86 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  239.11 MiB / 502.26 MiB  47.61% 7.05 MiB
+    > preloaded-images-k8s-v18-v1...:  76.47 MiB / 347.04 MiB  22.03% 2.86 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  240.78 MiB / 502.26 MiB  47.94% 7.08 MiB
+    > preloaded-images-k8s-v18-v1...:  77.19 MiB / 347.04 MiB  22.24% 2.86 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  242.16 MiB / 502.26 MiB  48.21% 7.08 MiB
+    > preloaded-images-k8s-v18-v1...:  77.84 MiB / 347.04 MiB  22.43% 2.90 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  243.17 MiB / 502.26 MiB  48.42% 7.08 MiB
+    > preloaded-images-k8s-v18-v1...:  78.62 MiB / 347.04 MiB  22.66% 2.90 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  245.32 MiB / 502.26 MiB  48.84% 7.12 MiB
+    > preloaded-images-k8s-v18-v1...:  78.84 MiB / 347.04 MiB  22.72% 2.90 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  246.45 MiB / 502.26 MiB  49.07% 7.12 MiB
+    > preloaded-images-k8s-v18-v1...:  79.03 MiB / 347.04 MiB  22.77% 2.84 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  247.83 MiB / 502.26 MiB  49.34% 7.12 MiB
+    > preloaded-images-k8s-v18-v1...:  80.78 MiB / 347.04 MiB  23.28% 2.84 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  249.20 MiB / 502.26 MiB  49.61% 7.10 MiB
+    > preloaded-images-k8s-v18-v1...:  81.50 MiB / 347.04 MiB  23.48% 2.84 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  250.59 MiB / 502.26 MiB  49.89% 7.10 MiB
+    > preloaded-images-k8s-v18-v1...:  81.61 MiB / 347.04 MiB  23.52% 2.93 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  251.93 MiB / 502.26 MiB  50.16% 7.10 MiB
+    > preloaded-images-k8s-v18-v1...:  82.78 MiB / 347.04 MiB  23.85% 2.93 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  253.32 MiB / 502.26 MiB  50.44% 7.08 MiB
+    > preloaded-images-k8s-v18-v1...:  84.62 MiB / 347.04 MiB  24.38% 2.93 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  254.63 MiB / 502.26 MiB  50.70% 7.08 MiB
+    > preloaded-images-k8s-v18-v1...:  85.56 MiB / 347.04 MiB  24.65% 3.17 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  255.95 MiB / 502.26 MiB  50.96% 7.08 MiB
+    > preloaded-images-k8s-v18-v1...:  86.41 MiB / 347.04 MiB  24.90% 3.17 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  257.18 MiB / 502.26 MiB  51.20% 7.04 MiB
+    > preloaded-images-k8s-v18-v1...:  86.53 MiB / 347.04 MiB  24.93% 3.17 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  258.58 MiB / 502.26 MiB  51.48% 7.04 MiB
+    > preloaded-images-k8s-v18-v1...:  87.37 MiB / 347.04 MiB  25.18% 3.16 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  259.91 MiB / 502.26 MiB  51.75% 7.04 MiB
+    > preloaded-images-k8s-v18-v1...:  89.09 MiB / 347.04 MiB  25.67% 3.16 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  260.66 MiB / 502.26 MiB  51.90% 6.96 MiB
+    > preloaded-images-k8s-v18-v1...:  89.66 MiB / 347.04 MiB  25.83% 3.16 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  261.54 MiB / 502.26 MiB  52.07% 6.96 MiB
+    > preloaded-images-k8s-v18-v1...:  89.66 MiB / 347.04 MiB  25.83% 3.20 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  262.96 MiB / 502.26 MiB  52.35% 6.96 MiB
+    > preloaded-images-k8s-v18-v1...:  90.53 MiB / 347.04 MiB  26.09% 3.20 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  264.32 MiB / 502.26 MiB  52.63% 6.89 MiB
+    > preloaded-images-k8s-v18-v1...:  92.44 MiB / 347.04 MiB  26.64% 3.20 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  265.22 MiB / 502.26 MiB  52.81% 6.89 MiB
+    > preloaded-images-k8s-v18-v1...:  93.09 MiB / 347.04 MiB  26.83% 3.36 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  265.49 MiB / 502.26 MiB  52.86% 6.89 MiB
+    > preloaded-images-k8s-v18-v1...:  93.75 MiB / 347.04 MiB  27.01% 3.36 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  267.75 MiB / 502.26 MiB  53.31% 6.83 MiB
+    > preloaded-images-k8s-v18-v1...:  94.84 MiB / 347.04 MiB  27.33% 3.36 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  269.38 MiB / 502.26 MiB  53.63% 6.83 MiB
+    > preloaded-images-k8s-v18-v1...:  95.66 MiB / 347.04 MiB  27.56% 3.42 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  270.58 MiB / 502.26 MiB  53.87% 6.83 MiB
+    > preloaded-images-k8s-v18-v1...:  96.44 MiB / 347.04 MiB  27.79% 3.42 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  270.93 MiB / 502.26 MiB  53.94% 6.73 MiB
+    > preloaded-images-k8s-v18-v1...:  97.22 MiB / 347.04 MiB  28.01% 3.42 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  270.93 MiB / 502.26 MiB  53.94% 6.73 MiB
+    > preloaded-images-k8s-v18-v1...:  98.03 MiB / 347.04 MiB  28.25% 3.46 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  271.63 MiB / 502.26 MiB  54.08% 6.73 MiB
+    > preloaded-images-k8s-v18-v1...:  98.81 MiB / 347.04 MiB  28.47% 3.46 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  272.98 MiB / 502.26 MiB  54.35% 6.52 MiB
+    > preloaded-images-k8s-v18-v1...:  99.22 MiB / 347.04 MiB  28.59% 3.46 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  274.43 MiB / 502.26 MiB  54.64% 6.52 MiB
+    > preloaded-images-k8s-v18-v1...:  99.22 MiB / 347.04 MiB  28.59% 3.36 MiB 
+    > gcr.io/k8s-minikube/kicbase...:  275.82 MiB / 502.26 MiB  54.92% 6.52 MiB
+    > preloaded-images-k8s-v18-v1...:  101.28 MiB / 347.04 MiB  29.18% 3.36 MiB
+    > gcr.io/k8s-minikube/kicbase...:  277.18 MiB / 502.26 MiB  55.19% 6.54 MiB
+    > preloaded-images-k8s-v18-v1...:  102.19 MiB / 347.04 MiB  29.45% 3.36 MiB
+    > gcr.io/k8s-minikube/kicbase...:  278.55 MiB / 502.26 MiB  55.46% 6.54 MiB
+    > preloaded-images-k8s-v18-v1...:  103.00 MiB / 347.04 MiB  29.68% 3.55 MiB
+    > gcr.io/k8s-minikube/kicbase...:  280.02 MiB / 502.26 MiB  55.75% 6.54 MiB
+    > preloaded-images-k8s-v18-v1...:  103.87 MiB / 347.04 MiB  29.93% 3.55 MiB
+    > gcr.io/k8s-minikube/kicbase...:  281.25 MiB / 502.26 MiB  56.00% 6.56 MiB
+    > preloaded-images-k8s-v18-v1...:  104.72 MiB / 347.04 MiB  30.17% 3.55 MiB
+    > gcr.io/k8s-minikube/kicbase...:  282.55 MiB / 502.26 MiB  56.26% 6.56 MiB
+    > preloaded-images-k8s-v18-v1...:  104.72 MiB / 347.04 MiB  30.17% 3.51 MiB
+    > gcr.io/k8s-minikube/kicbase...:  284.08 MiB / 502.26 MiB  56.56% 6.56 MiB
+    > preloaded-images-k8s-v18-v1...:  106.22 MiB / 347.04 MiB  30.61% 3.51 MiB
+    > gcr.io/k8s-minikube/kicbase...:  285.42 MiB / 502.26 MiB  56.83% 6.59 MiB
+    > preloaded-images-k8s-v18-v1...:  106.22 MiB / 347.04 MiB  30.61% 3.51 MiB
+    > gcr.io/k8s-minikube/kicbase...:  286.36 MiB / 502.26 MiB  57.01% 6.59 MiB
+    > preloaded-images-k8s-v18-v1...:  107.37 MiB / 347.04 MiB  30.94% 3.56 MiB
+    > gcr.io/k8s-minikube/kicbase...:  288.08 MiB / 502.26 MiB  57.36% 6.59 MiB
+    > preloaded-images-k8s-v18-v1...:  109.22 MiB / 347.04 MiB  31.47% 3.56 MiB
+    > gcr.io/k8s-minikube/kicbase...:  289.26 MiB / 502.26 MiB  57.59% 6.58 MiB
+    > preloaded-images-k8s-v18-v1...:  110.09 MiB / 347.04 MiB  31.72% 3.56 MiB
+    > gcr.io/k8s-minikube/kicbase...:  290.76 MiB / 502.26 MiB  57.89% 6.58 MiB
+    > preloaded-images-k8s-v18-v1...:  110.84 MiB / 347.04 MiB  31.94% 3.70 MiB
+    > gcr.io/k8s-minikube/kicbase...:  292.06 MiB / 502.26 MiB  58.15% 6.58 MiB
+    > preloaded-images-k8s-v18-v1...:  111.69 MiB / 347.04 MiB  32.18% 3.70 MiB
+    > gcr.io/k8s-minikube/kicbase...:  293.49 MiB / 502.26 MiB  58.43% 6.61 MiB
+    > preloaded-images-k8s-v18-v1...:  112.53 MiB / 347.04 MiB  32.43% 3.70 MiB
+    > gcr.io/k8s-minikube/kicbase...:  294.82 MiB / 502.26 MiB  58.70% 6.61 MiB
+    > preloaded-images-k8s-v18-v1...:  113.41 MiB / 347.04 MiB  32.68% 3.73 MiB
+    > gcr.io/k8s-minikube/kicbase...:  296.19 MiB / 502.26 MiB  58.97% 6.61 MiB
+    > preloaded-images-k8s-v18-v1...:  114.12 MiB / 347.04 MiB  32.89% 3.73 MiB
+    > gcr.io/k8s-minikube/kicbase...:  297.51 MiB / 502.26 MiB  59.23% 6.61 MiB
+    > preloaded-images-k8s-v18-v1...:  114.97 MiB / 347.04 MiB  33.13% 3.73 MiB
+    > gcr.io/k8s-minikube/kicbase...:  298.81 MiB / 502.26 MiB  59.49% 6.61 MiB
+    > preloaded-images-k8s-v18-v1...:  115.75 MiB / 347.04 MiB  33.35% 3.76 MiB
+    > gcr.io/k8s-minikube/kicbase...:  300.23 MiB / 502.26 MiB  59.78% 6.61 MiB
+    > preloaded-images-k8s-v18-v1...:  115.75 MiB / 347.04 MiB  33.35% 3.76 MiB
+    > gcr.io/k8s-minikube/kicbase...:  301.75 MiB / 502.26 MiB  60.08% 6.63 MiB
+    > preloaded-images-k8s-v18-v1...:  117.33 MiB / 347.04 MiB  33.81% 3.76 MiB
+    > gcr.io/k8s-minikube/kicbase...:  303.20 MiB / 502.26 MiB  60.37% 6.63 MiB
+    > preloaded-images-k8s-v18-v1...:  118.28 MiB / 347.04 MiB  34.08% 3.79 MiB
+    > gcr.io/k8s-minikube/kicbase...:  304.67 MiB / 502.26 MiB  60.66% 6.63 MiB
+    > preloaded-images-k8s-v18-v1...:  119.03 MiB / 347.04 MiB  34.30% 3.79 MiB
+    > gcr.io/k8s-minikube/kicbase...:  305.96 MiB / 502.26 MiB  60.92% 6.67 MiB
+    > preloaded-images-k8s-v18-v1...:  119.37 MiB / 347.04 MiB  34.40% 3.79 MiB
+    > gcr.io/k8s-minikube/kicbase...:  307.28 MiB / 502.26 MiB  61.18% 6.67 MiB
+    > preloaded-images-k8s-v18-v1...:  119.72 MiB / 347.04 MiB  34.50% 3.70 MiB
+    > gcr.io/k8s-minikube/kicbase...:  308.90 MiB / 502.26 MiB  61.50% 6.67 MiB
+    > preloaded-images-k8s-v18-v1...:  120.47 MiB / 347.04 MiB  34.71% 3.70 MiB
+    > gcr.io/k8s-minikube/kicbase...:  310.12 MiB / 502.26 MiB  61.74% 6.68 MiB
+    > preloaded-images-k8s-v18-v1...:  121.19 MiB / 347.04 MiB  34.92% 3.70 MiB
+    > gcr.io/k8s-minikube/kicbase...:  311.45 MiB / 502.26 MiB  62.01% 6.68 MiB
+    > preloaded-images-k8s-v18-v1...:  122.09 MiB / 347.04 MiB  35.18% 3.71 MiB
+    > gcr.io/k8s-minikube/kicbase...:  312.85 MiB / 502.26 MiB  62.29% 6.68 MiB
+    > preloaded-images-k8s-v18-v1...:  122.47 MiB / 347.04 MiB  35.29% 3.71 MiB
+    > gcr.io/k8s-minikube/kicbase...:  314.19 MiB / 502.26 MiB  62.56% 6.68 MiB
+    > preloaded-images-k8s-v18-v1...:  122.47 MiB / 347.04 MiB  35.29% 3.71 MiB
+    > gcr.io/k8s-minikube/kicbase...:  315.60 MiB / 502.26 MiB  62.84% 6.68 MiB
+    > preloaded-images-k8s-v18-v1...:  124.41 MiB / 347.04 MiB  35.85% 3.72 MiB
+    > gcr.io/k8s-minikube/kicbase...:  316.96 MiB / 502.26 MiB  63.11% 6.68 MiB
+    > preloaded-images-k8s-v18-v1...:  125.09 MiB / 347.04 MiB  36.05% 3.72 MiB
+    > gcr.io/k8s-minikube/kicbase...:  318.38 MiB / 502.26 MiB  63.39% 6.70 MiB
+    > preloaded-images-k8s-v18-v1...:  125.84 MiB / 347.04 MiB  36.26% 3.72 MiB
+    > gcr.io/k8s-minikube/kicbase...:  319.90 MiB / 502.26 MiB  63.69% 6.70 MiB
+    > preloaded-images-k8s-v18-v1...:  126.66 MiB / 347.04 MiB  36.50% 3.72 MiB
+    > gcr.io/k8s-minikube/kicbase...:  321.16 MiB / 502.26 MiB  63.94% 6.70 MiB
+    > preloaded-images-k8s-v18-v1...:  127.41 MiB / 347.04 MiB  36.71% 3.72 MiB
+    > gcr.io/k8s-minikube/kicbase...:  322.43 MiB / 502.26 MiB  64.19% 6.71 MiB
+    > preloaded-images-k8s-v18-v1...:  128.22 MiB / 347.04 MiB  36.95% 3.72 MiB
+    > gcr.io/k8s-minikube/kicbase...:  323.99 MiB / 502.26 MiB  64.51% 6.71 MiB
+    > preloaded-images-k8s-v18-v1...:  129.09 MiB / 347.04 MiB  37.20% 3.75 MiB
+    > gcr.io/k8s-minikube/kicbase...:  325.22 MiB / 502.26 MiB  64.75% 6.71 MiB
+    > preloaded-images-k8s-v18-v1...:  129.91 MiB / 347.04 MiB  37.43% 3.75 MiB
+    > gcr.io/k8s-minikube/kicbase...:  326.61 MiB / 502.26 MiB  65.03% 6.73 MiB
+    > preloaded-images-k8s-v18-v1...:  130.12 MiB / 347.04 MiB  37.50% 3.75 MiB
+    > gcr.io/k8s-minikube/kicbase...:  328.04 MiB / 502.26 MiB  65.31% 6.73 MiB
+    > preloaded-images-k8s-v18-v1...:  131.69 MiB / 347.04 MiB  37.95% 3.78 MiB
+    > gcr.io/k8s-minikube/kicbase...:  329.45 MiB / 502.26 MiB  65.59% 6.73 MiB
+    > preloaded-images-k8s-v18-v1...:  132.62 MiB / 347.04 MiB  38.22% 3.78 MiB
+    > gcr.io/k8s-minikube/kicbase...:  330.51 MiB / 502.26 MiB  65.80% 6.71 MiB
+    > preloaded-images-k8s-v18-v1...:  133.53 MiB / 347.04 MiB  38.48% 3.78 MiB
+    > gcr.io/k8s-minikube/kicbase...:  331.34 MiB / 502.26 MiB  65.97% 6.71 MiB
+    > preloaded-images-k8s-v18-v1...:  134.44 MiB / 347.04 MiB  38.74% 3.83 MiB
+    > gcr.io/k8s-minikube/kicbase...:  332.65 MiB / 502.26 MiB  66.23% 6.71 MiB
+    > preloaded-images-k8s-v18-v1...:  135.34 MiB / 347.04 MiB  39.00% 3.83 MiB
+    > gcr.io/k8s-minikube/kicbase...:  333.98 MiB / 502.26 MiB  66.50% 6.65 MiB
+    > preloaded-images-k8s-v18-v1...:  136.28 MiB / 347.04 MiB  39.27% 3.83 MiB
+    > gcr.io/k8s-minikube/kicbase...:  334.59 MiB / 502.26 MiB  66.62% 6.65 MiB
+    > preloaded-images-k8s-v18-v1...:  137.22 MiB / 347.04 MiB  39.54% 3.89 MiB
+    > gcr.io/k8s-minikube/kicbase...:  334.59 MiB / 502.26 MiB  66.62% 6.65 MiB
+    > preloaded-images-k8s-v18-v1...:  138.16 MiB / 347.04 MiB  39.81% 3.89 MiB
+    > gcr.io/k8s-minikube/kicbase...:  334.59 MiB / 502.26 MiB  66.62% 6.29 MiB
+    > preloaded-images-k8s-v18-v1...:  139.00 MiB / 347.04 MiB  40.05% 3.89 MiB
+    > gcr.io/k8s-minikube/kicbase...:  335.51 MiB / 502.26 MiB  66.80% 6.29 MiB
+    > preloaded-images-k8s-v18-v1...:  139.16 MiB / 347.04 MiB  40.10% 3.84 MiB
+    > gcr.io/k8s-minikube/kicbase...:  336.81 MiB / 502.26 MiB  67.06% 6.29 MiB
+    > preloaded-images-k8s-v18-v1...:  141.00 MiB / 347.04 MiB  40.63% 3.84 MiB
+    > gcr.io/k8s-minikube/kicbase...:  338.00 MiB / 502.26 MiB  67.30% 6.26 MiB
+    > preloaded-images-k8s-v18-v1...:  141.22 MiB / 347.04 MiB  40.69% 3.84 MiB
+    > gcr.io/k8s-minikube/kicbase...:  339.30 MiB / 502.26 MiB  67.55% 6.26 MiB
+    > preloaded-images-k8s-v18-v1...:  141.97 MiB / 347.04 MiB  40.91% 3.90 MiB
+    > gcr.io/k8s-minikube/kicbase...:  340.31 MiB / 502.26 MiB  67.76% 6.26 MiB
+    > preloaded-images-k8s-v18-v1...:  142.56 MiB / 347.04 MiB  41.08% 3.90 MiB
+    > gcr.io/k8s-minikube/kicbase...:  341.55 MiB / 502.26 MiB  68.00% 6.24 MiB
+    > preloaded-images-k8s-v18-v1...:  143.34 MiB / 347.04 MiB  41.30% 3.90 MiB
+    > gcr.io/k8s-minikube/kicbase...:  342.65 MiB / 502.26 MiB  68.22% 6.24 MiB
+    > preloaded-images-k8s-v18-v1...:  144.81 MiB / 347.04 MiB  41.73% 3.95 MiB
+    > gcr.io/k8s-minikube/kicbase...:  343.75 MiB / 502.26 MiB  68.44% 6.24 MiB
+    > preloaded-images-k8s-v18-v1...:  145.69 MiB / 347.04 MiB  41.98% 3.95 MiB
+    > gcr.io/k8s-minikube/kicbase...:  345.11 MiB / 502.26 MiB  68.71% 6.21 MiB
+    > preloaded-images-k8s-v18-v1...:  147.62 MiB / 347.04 MiB  42.54% 3.95 MiB
+    > gcr.io/k8s-minikube/kicbase...:  346.25 MiB / 502.26 MiB  68.94% 6.21 MiB
+    > preloaded-images-k8s-v18-v1...:  149.09 MiB / 347.04 MiB  42.96% 4.16 MiB
+    > gcr.io/k8s-minikube/kicbase...:  347.47 MiB / 502.26 MiB  69.18% 6.21 MiB
+    > preloaded-images-k8s-v18-v1...:  150.09 MiB / 347.04 MiB  43.25% 4.16 MiB
+    > gcr.io/k8s-minikube/kicbase...:  348.64 MiB / 502.26 MiB  69.41% 6.20 MiB
+    > preloaded-images-k8s-v18-v1...:  151.06 MiB / 347.04 MiB  43.53% 4.16 MiB
+    > gcr.io/k8s-minikube/kicbase...:  349.79 MiB / 502.26 MiB  69.64% 6.20 MiB
+    > preloaded-images-k8s-v18-v1...:  152.00 MiB / 347.04 MiB  43.80% 4.20 MiB
+    > gcr.io/k8s-minikube/kicbase...:  350.97 MiB / 502.26 MiB  69.88% 6.20 MiB
+    > preloaded-images-k8s-v18-v1...:  153.03 MiB / 347.04 MiB  44.10% 4.20 MiB
+    > gcr.io/k8s-minikube/kicbase...:  352.15 MiB / 502.26 MiB  70.11% 6.17 MiB
+    > preloaded-images-k8s-v18-v1...:  154.03 MiB / 347.04 MiB  44.38% 4.20 MiB
+    > gcr.io/k8s-minikube/kicbase...:  353.45 MiB / 502.26 MiB  70.37% 6.17 MiB
+    > preloaded-images-k8s-v18-v1...:  155.00 MiB / 347.04 MiB  44.66% 4.25 MiB
+    > gcr.io/k8s-minikube/kicbase...:  354.42 MiB / 502.26 MiB  70.56% 6.17 MiB
+    > preloaded-images-k8s-v18-v1...:  155.00 MiB / 347.04 MiB  44.66% 4.25 MiB
+    > gcr.io/k8s-minikube/kicbase...:  355.84 MiB / 502.26 MiB  70.85% 6.17 MiB
+    > preloaded-images-k8s-v18-v1...:  155.69 MiB / 347.04 MiB  44.86% 4.25 MiB
+    > gcr.io/k8s-minikube/kicbase...:  357.11 MiB / 502.26 MiB  71.10% 6.17 MiB
+    > preloaded-images-k8s-v18-v1...:  157.62 MiB / 347.04 MiB  45.42% 4.26 MiB
+    > gcr.io/k8s-minikube/kicbase...:  358.22 MiB / 502.26 MiB  71.32% 6.17 MiB
+    > preloaded-images-k8s-v18-v1...:  157.62 MiB / 347.04 MiB  45.42% 4.26 MiB
+    > gcr.io/k8s-minikube/kicbase...:  359.42 MiB / 502.26 MiB  71.56% 6.16 MiB
+    > preloaded-images-k8s-v18-v1...:  157.81 MiB / 347.04 MiB  45.47% 4.26 MiB
+    > gcr.io/k8s-minikube/kicbase...:  360.59 MiB / 502.26 MiB  71.79% 6.16 MiB
+    > preloaded-images-k8s-v18-v1...:  160.25 MiB / 347.04 MiB  46.18% 4.27 MiB
+    > gcr.io/k8s-minikube/kicbase...:  361.70 MiB / 502.26 MiB  72.01% 6.16 MiB
+    > preloaded-images-k8s-v18-v1...:  160.75 MiB / 347.04 MiB  46.32% 4.27 MiB
+    > gcr.io/k8s-minikube/kicbase...:  362.59 MiB / 502.26 MiB  72.19% 6.09 MiB
+    > preloaded-images-k8s-v18-v1...:  161.69 MiB / 347.04 MiB  46.59% 4.27 MiB
+    > gcr.io/k8s-minikube/kicbase...:  363.90 MiB / 502.26 MiB  72.45% 6.09 MiB
+    > preloaded-images-k8s-v18-v1...:  162.72 MiB / 347.04 MiB  46.89% 4.26 MiB
+    > gcr.io/k8s-minikube/kicbase...:  365.12 MiB / 502.26 MiB  72.70% 6.09 MiB
+    > preloaded-images-k8s-v18-v1...:  163.28 MiB / 347.04 MiB  47.05% 4.26 MiB
+    > gcr.io/k8s-minikube/kicbase...:  366.26 MiB / 502.26 MiB  72.92% 6.10 MiB
+    > preloaded-images-k8s-v18-v1...:  163.28 MiB / 347.04 MiB  47.05% 4.26 MiB
+    > gcr.io/k8s-minikube/kicbase...:  367.42 MiB / 502.26 MiB  73.15% 6.10 MiB
+    > preloaded-images-k8s-v18-v1...:  164.53 MiB / 347.04 MiB  47.41% 4.18 MiB
+    > gcr.io/k8s-minikube/kicbase...:  368.53 MiB / 502.26 MiB  73.37% 6.10 MiB
+    > preloaded-images-k8s-v18-v1...:  166.34 MiB / 347.04 MiB  47.93% 4.18 MiB
+    > gcr.io/k8s-minikube/kicbase...:  369.67 MiB / 502.26 MiB  73.60% 6.08 MiB
+    > preloaded-images-k8s-v18-v1...:  167.28 MiB / 347.04 MiB  48.20% 4.18 MiB
+    > gcr.io/k8s-minikube/kicbase...:  370.73 MiB / 502.26 MiB  73.81% 6.08 MiB
+    > preloaded-images-k8s-v18-v1...:  168.22 MiB / 347.04 MiB  48.47% 4.31 MiB
+    > gcr.io/k8s-minikube/kicbase...:  372.11 MiB / 502.26 MiB  74.09% 6.08 MiB
+    > preloaded-images-k8s-v18-v1...:  169.06 MiB / 347.04 MiB  48.72% 4.31 MiB
+    > gcr.io/k8s-minikube/kicbase...:  373.30 MiB / 502.26 MiB  74.32% 6.07 MiB
+    > preloaded-images-k8s-v18-v1...:  170.06 MiB / 347.04 MiB  49.00% 4.31 MiB
+    > gcr.io/k8s-minikube/kicbase...:  374.47 MiB / 502.26 MiB  74.56% 6.07 MiB
+    > preloaded-images-k8s-v18-v1...:  171.03 MiB / 347.04 MiB  49.28% 4.33 MiB
+    > gcr.io/k8s-minikube/kicbase...:  375.62 MiB / 502.26 MiB  74.79% 6.07 MiB
+    > preloaded-images-k8s-v18-v1...:  171.97 MiB / 347.04 MiB  49.55% 4.33 MiB
+    > gcr.io/k8s-minikube/kicbase...:  376.89 MiB / 502.26 MiB  75.04% 6.07 MiB
+    > preloaded-images-k8s-v18-v1...:  172.53 MiB / 347.04 MiB  49.72% 4.33 MiB
+    > gcr.io/k8s-minikube/kicbase...:  378.03 MiB / 502.26 MiB  75.27% 6.07 MiB
+    > preloaded-images-k8s-v18-v1...:  172.53 MiB / 347.04 MiB  49.72% 4.21 MiB
+    > gcr.io/k8s-minikube/kicbase...:  379.28 MiB / 502.26 MiB  75.51% 6.07 MiB
+    > preloaded-images-k8s-v18-v1...:  173.41 MiB / 347.04 MiB  49.97% 4.21 MiB
+    > gcr.io/k8s-minikube/kicbase...:  380.40 MiB / 502.26 MiB  75.74% 6.06 MiB
+    > preloaded-images-k8s-v18-v1...:  175.91 MiB / 347.04 MiB  50.69% 4.21 MiB
+    > gcr.io/k8s-minikube/kicbase...:  381.67 MiB / 502.26 MiB  75.99% 6.06 MiB
+    > preloaded-images-k8s-v18-v1...:  176.84 MiB / 347.04 MiB  50.96% 4.41 MiB
+    > gcr.io/k8s-minikube/kicbase...:  382.69 MiB / 502.26 MiB  76.19% 6.06 MiB
+    > preloaded-images-k8s-v18-v1...:  177.72 MiB / 347.04 MiB  51.21% 4.41 MiB
+    > gcr.io/k8s-minikube/kicbase...:  383.81 MiB / 502.26 MiB  76.42% 6.03 MiB
+    > preloaded-images-k8s-v18-v1...:  178.69 MiB / 347.04 MiB  51.49% 4.41 MiB
+    > gcr.io/k8s-minikube/kicbase...:  385.00 MiB / 502.26 MiB  76.65% 6.03 MiB
+    > preloaded-images-k8s-v18-v1...:  179.62 MiB / 347.04 MiB  51.76% 4.42 MiB
+    > gcr.io/k8s-minikube/kicbase...:  386.08 MiB / 502.26 MiB  76.87% 6.03 MiB
+    > preloaded-images-k8s-v18-v1...:  180.50 MiB / 347.04 MiB  52.01% 4.42 MiB
+    > gcr.io/k8s-minikube/kicbase...:  387.26 MiB / 502.26 MiB  77.10% 6.01 MiB
+    > preloaded-images-k8s-v18-v1...:  181.53 MiB / 347.04 MiB  52.31% 4.42 MiB
+    > gcr.io/k8s-minikube/kicbase...:  388.43 MiB / 502.26 MiB  77.34% 6.01 MiB
+    > preloaded-images-k8s-v18-v1...:  182.19 MiB / 347.04 MiB  52.50% 4.41 MiB
+    > gcr.io/k8s-minikube/kicbase...:  389.73 MiB / 502.26 MiB  77.59% 6.01 MiB
+    > preloaded-images-k8s-v18-v1...:  182.19 MiB / 347.04 MiB  52.50% 4.41 MiB
+    > gcr.io/k8s-minikube/kicbase...:  390.95 MiB / 502.26 MiB  77.84% 6.01 MiB
+    > preloaded-images-k8s-v18-v1...:  184.31 MiB / 347.04 MiB  53.11% 4.41 MiB
+    > gcr.io/k8s-minikube/kicbase...:  392.00 MiB / 502.26 MiB  78.05% 6.01 MiB
+    > preloaded-images-k8s-v18-v1...:  185.25 MiB / 347.04 MiB  53.38% 4.46 MiB
+    > gcr.io/k8s-minikube/kicbase...:  392.00 MiB / 502.26 MiB  78.05% 6.01 MiB
+    > preloaded-images-k8s-v18-v1...:  186.37 MiB / 347.04 MiB  53.70% 4.46 MiB
+    > gcr.io/k8s-minikube/kicbase...:  392.00 MiB / 502.26 MiB  78.05% 5.74 MiB
+    > preloaded-images-k8s-v18-v1...:  187.37 MiB / 347.04 MiB  53.99% 4.46 MiB
+    > gcr.io/k8s-minikube/kicbase...:  392.78 MiB / 502.26 MiB  78.20% 5.74 MiB
+    > preloaded-images-k8s-v18-v1...:  188.37 MiB / 347.04 MiB  54.28% 4.50 MiB
+    > gcr.io/k8s-minikube/kicbase...:  393.87 MiB / 502.26 MiB  78.42% 5.74 MiB
+    > preloaded-images-k8s-v18-v1...:  189.47 MiB / 347.04 MiB  54.60% 4.50 MiB
+    > gcr.io/k8s-minikube/kicbase...:  394.53 MiB / 502.26 MiB  78.55% 5.64 MiB
+    > preloaded-images-k8s-v18-v1...:  190.56 MiB / 347.04 MiB  54.91% 4.50 MiB
+    > gcr.io/k8s-minikube/kicbase...:  395.58 MiB / 502.26 MiB  78.76% 5.64 MiB
+    > preloaded-images-k8s-v18-v1...:  191.66 MiB / 347.04 MiB  55.23% 4.57 MiB
+    > gcr.io/k8s-minikube/kicbase...:  396.78 MiB / 502.26 MiB  79.00% 5.64 MiB
+    > preloaded-images-k8s-v18-v1...:  192.72 MiB / 347.04 MiB  55.53% 4.57 MiB
+    > gcr.io/k8s-minikube/kicbase...:  397.94 MiB / 502.26 MiB  79.23% 5.64 MiB
+    > preloaded-images-k8s-v18-v1...:  193.87 MiB / 347.04 MiB  55.87% 4.57 MiB
+    > gcr.io/k8s-minikube/kicbase...:  399.08 MiB / 502.26 MiB  79.46% 5.64 MiB
+    > preloaded-images-k8s-v18-v1...:  194.97 MiB / 347.04 MiB  56.18% 4.63 MiB
+    > gcr.io/k8s-minikube/kicbase...:  400.21 MiB / 502.26 MiB  79.68% 5.64 MiB
+    > preloaded-images-k8s-v18-v1...:  196.06 MiB / 347.04 MiB  56.50% 4.63 MiB
+    > gcr.io/k8s-minikube/kicbase...:  401.37 MiB / 502.26 MiB  79.91% 5.65 MiB
+    > preloaded-images-k8s-v18-v1...:  197.19 MiB / 347.04 MiB  56.82% 4.63 MiB
+    > gcr.io/k8s-minikube/kicbase...:  402.51 MiB / 502.26 MiB  80.14% 5.65 MiB
+    > preloaded-images-k8s-v18-v1...:  197.62 MiB / 347.04 MiB  56.95% 4.61 MiB
+    > gcr.io/k8s-minikube/kicbase...:  403.62 MiB / 502.26 MiB  80.36% 5.65 MiB
+    > preloaded-images-k8s-v18-v1...:  197.84 MiB / 347.04 MiB  57.01% 4.61 MiB
+    > gcr.io/k8s-minikube/kicbase...:  404.57 MiB / 502.26 MiB  80.55% 5.63 MiB
+    > preloaded-images-k8s-v18-v1...:  198.84 MiB / 347.04 MiB  57.30% 4.61 MiB
+    > gcr.io/k8s-minikube/kicbase...:  405.70 MiB / 502.26 MiB  80.77% 5.63 MiB
+    > preloaded-images-k8s-v18-v1...:  200.44 MiB / 347.04 MiB  57.76% 4.62 MiB
+    > gcr.io/k8s-minikube/kicbase...:  406.91 MiB / 502.26 MiB  81.02% 5.63 MiB
+    > preloaded-images-k8s-v18-v1...:  201.25 MiB / 347.04 MiB  57.99% 4.62 MiB
+    > gcr.io/k8s-minikube/kicbase...:  407.95 MiB / 502.26 MiB  81.22% 5.63 MiB
+    > preloaded-images-k8s-v18-v1...:  202.56 MiB / 347.04 MiB  58.37% 4.62 MiB
+    > gcr.io/k8s-minikube/kicbase...:  409.00 MiB / 502.26 MiB  81.43% 5.63 MiB
+    > preloaded-images-k8s-v18-v1...:  204.91 MiB / 347.04 MiB  59.04% 4.80 MiB
+    > gcr.io/k8s-minikube/kicbase...:  410.02 MiB / 502.26 MiB  81.63% 5.63 MiB
+    > preloaded-images-k8s-v18-v1...:  206.03 MiB / 347.04 MiB  59.37% 4.80 MiB
+    > gcr.io/k8s-minikube/kicbase...:  411.05 MiB / 502.26 MiB  81.84% 5.59 MiB
+    > preloaded-images-k8s-v18-v1...:  207.09 MiB / 347.04 MiB  59.67% 4.80 MiB
+    > gcr.io/k8s-minikube/kicbase...:  412.12 MiB / 502.26 MiB  82.05% 5.59 MiB
+    > preloaded-images-k8s-v18-v1...:  208.09 MiB / 347.04 MiB  59.96% 4.83 MiB
+    > gcr.io/k8s-minikube/kicbase...:  413.11 MiB / 502.26 MiB  82.25% 5.59 MiB
+    > preloaded-images-k8s-v18-v1...:  208.37 MiB / 347.04 MiB  60.04% 4.83 MiB
+    > gcr.io/k8s-minikube/kicbase...:  414.06 MiB / 502.26 MiB  82.44% 5.56 MiB
+    > preloaded-images-k8s-v18-v1...:  210.12 MiB / 347.04 MiB  60.55% 4.83 MiB
+    > gcr.io/k8s-minikube/kicbase...:  415.23 MiB / 502.26 MiB  82.67% 5.56 MiB
+    > preloaded-images-k8s-v18-v1...:  210.84 MiB / 347.04 MiB  60.76% 4.82 MiB
+    > gcr.io/k8s-minikube/kicbase...:  416.52 MiB / 502.26 MiB  82.93% 5.56 MiB
+    > preloaded-images-k8s-v18-v1...:  210.84 MiB / 347.04 MiB  60.76% 4.82 MiB
+    > gcr.io/k8s-minikube/kicbase...:  417.58 MiB / 502.26 MiB  83.14% 5.58 MiB
+    > preloaded-images-k8s-v18-v1...:  213.37 MiB / 347.04 MiB  61.48% 4.82 MiB
+    > gcr.io/k8s-minikube/kicbase...:  418.72 MiB / 502.26 MiB  83.37% 5.58 MiB
+    > preloaded-images-k8s-v18-v1...:  213.66 MiB / 347.04 MiB  61.57% 4.81 MiB
+    > gcr.io/k8s-minikube/kicbase...:  419.87 MiB / 502.26 MiB  83.60% 5.58 MiB
+    > preloaded-images-k8s-v18-v1...:  214.34 MiB / 347.04 MiB  61.76% 4.81 MiB
+    > gcr.io/k8s-minikube/kicbase...:  421.12 MiB / 502.26 MiB  83.85% 5.60 MiB
+    > preloaded-images-k8s-v18-v1...:  214.97 MiB / 347.04 MiB  61.94% 4.81 MiB
+    > gcr.io/k8s-minikube/kicbase...:  422.26 MiB / 502.26 MiB  84.07% 5.60 MiB
+    > preloaded-images-k8s-v18-v1...:  215.97 MiB / 347.04 MiB  62.23% 4.75 MiB
+    > gcr.io/k8s-minikube/kicbase...:  423.20 MiB / 502.26 MiB  84.26% 5.60 MiB
+    > preloaded-images-k8s-v18-v1...:  217.06 MiB / 347.04 MiB  62.55% 4.75 MiB
+    > gcr.io/k8s-minikube/kicbase...:  424.27 MiB / 502.26 MiB  84.47% 5.58 MiB
+    > preloaded-images-k8s-v18-v1...:  218.16 MiB / 347.04 MiB  62.86% 4.75 MiB
+    > gcr.io/k8s-minikube/kicbase...:  425.41 MiB / 502.26 MiB  84.70% 5.58 MiB
+    > preloaded-images-k8s-v18-v1...:  218.97 MiB / 347.04 MiB  63.10% 4.77 MiB
+    > gcr.io/k8s-minikube/kicbase...:  426.62 MiB / 502.26 MiB  84.94% 5.58 MiB
+    > preloaded-images-k8s-v18-v1...:  218.97 MiB / 347.04 MiB  63.10% 4.77 MiB
+    > gcr.io/k8s-minikube/kicbase...:  427.75 MiB / 502.26 MiB  85.16% 5.60 MiB
+    > preloaded-images-k8s-v18-v1...:  221.22 MiB / 347.04 MiB  63.74% 4.77 MiB
+    > gcr.io/k8s-minikube/kicbase...:  428.86 MiB / 502.26 MiB  85.39% 5.60 MiB
+    > preloaded-images-k8s-v18-v1...:  222.37 MiB / 347.04 MiB  64.08% 4.83 MiB
+    > gcr.io/k8s-minikube/kicbase...:  429.95 MiB / 502.26 MiB  85.60% 5.60 MiB
+    > preloaded-images-k8s-v18-v1...:  223.37 MiB / 347.04 MiB  64.37% 4.83 MiB
+    > gcr.io/k8s-minikube/kicbase...:  431.05 MiB / 502.26 MiB  85.82% 5.59 MiB
+    > preloaded-images-k8s-v18-v1...:  224.41 MiB / 347.04 MiB  64.66% 4.83 MiB
+    > gcr.io/k8s-minikube/kicbase...:  432.22 MiB / 502.26 MiB  86.05% 5.59 MiB
+    > preloaded-images-k8s-v18-v1...:  225.47 MiB / 347.04 MiB  64.97% 4.85 MiB
+    > gcr.io/k8s-minikube/kicbase...:  433.33 MiB / 502.26 MiB  86.28% 5.59 MiB
+    > preloaded-images-k8s-v18-v1...:  226.56 MiB / 347.04 MiB  65.28% 4.85 MiB
+    > gcr.io/k8s-minikube/kicbase...:  434.39 MiB / 502.26 MiB  86.49% 5.59 MiB
+    > preloaded-images-k8s-v18-v1...:  227.78 MiB / 347.04 MiB  65.64% 4.85 MiB
+    > gcr.io/k8s-minikube/kicbase...:  435.28 MiB / 502.26 MiB  86.66% 5.59 MiB
+    > preloaded-images-k8s-v18-v1...:  228.87 MiB / 347.04 MiB  65.95% 4.90 MiB
+    > gcr.io/k8s-minikube/kicbase...:  436.00 MiB / 502.26 MiB  86.81% 5.59 MiB
+    > preloaded-images-k8s-v18-v1...:  230.06 MiB / 347.04 MiB  66.29% 4.90 MiB
+    > gcr.io/k8s-minikube/kicbase...:  437.20 MiB / 502.26 MiB  87.05% 5.52 MiB
+    > preloaded-images-k8s-v18-v1...:  231.25 MiB / 347.04 MiB  66.64% 4.90 MiB
+    > gcr.io/k8s-minikube/kicbase...:  438.11 MiB / 502.26 MiB  87.23% 5.52 MiB
+    > preloaded-images-k8s-v18-v1...:  231.75 MiB / 347.04 MiB  66.78% 4.89 MiB
+    > gcr.io/k8s-minikube/kicbase...:  439.14 MiB / 502.26 MiB  87.43% 5.52 MiB
+    > preloaded-images-k8s-v18-v1...:  231.94 MiB / 347.04 MiB  66.83% 4.89 MiB
+    > gcr.io/k8s-minikube/kicbase...:  440.09 MiB / 502.26 MiB  87.62% 5.49 MiB
+    > preloaded-images-k8s-v18-v1...:  234.97 MiB / 347.04 MiB  67.71% 4.89 MiB
+    > gcr.io/k8s-minikube/kicbase...:  441.09 MiB / 502.26 MiB  87.82% 5.49 MiB
+    > preloaded-images-k8s-v18-v1...:  236.22 MiB / 347.04 MiB  68.07% 5.06 MiB
+    > gcr.io/k8s-minikube/kicbase...:  442.06 MiB / 502.26 MiB  88.01% 5.49 MiB
+    > preloaded-images-k8s-v18-v1...:  237.44 MiB / 347.04 MiB  68.42% 5.06 MiB
+    > gcr.io/k8s-minikube/kicbase...:  443.11 MiB / 502.26 MiB  88.22% 5.46 MiB
+    > preloaded-images-k8s-v18-v1...:  238.72 MiB / 347.04 MiB  68.79% 5.06 MiB
+    > gcr.io/k8s-minikube/kicbase...:  444.11 MiB / 502.26 MiB  88.42% 5.46 MiB
+    > preloaded-images-k8s-v18-v1...:  239.94 MiB / 347.04 MiB  69.14% 5.13 MiB
+    > gcr.io/k8s-minikube/kicbase...:  445.06 MiB / 502.26 MiB  88.61% 5.46 MiB
+    > preloaded-images-k8s-v18-v1...:  240.56 MiB / 347.04 MiB  69.32% 5.13 MiB
+    > gcr.io/k8s-minikube/kicbase...:  446.11 MiB / 502.26 MiB  88.82% 5.43 MiB
+    > preloaded-images-k8s-v18-v1...:  240.56 MiB / 347.04 MiB  69.32% 5.13 MiB
+    > gcr.io/k8s-minikube/kicbase...:  447.06 MiB / 502.26 MiB  89.01% 5.43 MiB
+    > preloaded-images-k8s-v18-v1...:  243.78 MiB / 347.04 MiB  70.25% 5.21 MiB
+    > gcr.io/k8s-minikube/kicbase...:  448.00 MiB / 502.26 MiB  89.20% 5.43 MiB
+    > preloaded-images-k8s-v18-v1...:  244.47 MiB / 347.04 MiB  70.44% 5.21 MiB
+    > gcr.io/k8s-minikube/kicbase...:  448.84 MiB / 502.26 MiB  89.36% 5.37 MiB
+    > preloaded-images-k8s-v18-v1...:  244.47 MiB / 347.04 MiB  70.44% 5.21 MiB
+    > gcr.io/k8s-minikube/kicbase...:  449.73 MiB / 502.26 MiB  89.54% 5.37 MiB
+    > preloaded-images-k8s-v18-v1...:  245.62 MiB / 347.04 MiB  70.78% 5.07 MiB
+    > gcr.io/k8s-minikube/kicbase...:  450.56 MiB / 502.26 MiB  89.71% 5.37 MiB
+    > preloaded-images-k8s-v18-v1...:  248.91 MiB / 347.04 MiB  71.72% 5.07 MiB
+    > gcr.io/k8s-minikube/kicbase...:  451.36 MiB / 502.26 MiB  89.86% 5.29 MiB
+    > preloaded-images-k8s-v18-v1...:  249.97 MiB / 347.04 MiB  72.03% 5.07 MiB
+    > gcr.io/k8s-minikube/kicbase...:  452.20 MiB / 502.26 MiB  90.03% 5.29 MiB
+    > preloaded-images-k8s-v18-v1...:  251.28 MiB / 347.04 MiB  72.41% 5.37 MiB
+    > gcr.io/k8s-minikube/kicbase...:  453.03 MiB / 502.26 MiB  90.20% 5.29 MiB
+    > preloaded-images-k8s-v18-v1...:  252.47 MiB / 347.04 MiB  72.75% 5.37 MiB
+    > gcr.io/k8s-minikube/kicbase...:  453.80 MiB / 502.26 MiB  90.35% 5.21 MiB
+    > preloaded-images-k8s-v18-v1...:  252.56 MiB / 347.04 MiB  72.78% 5.37 MiB
+    > gcr.io/k8s-minikube/kicbase...:  454.91 MiB / 502.26 MiB  90.57% 5.21 MiB
+    > preloaded-images-k8s-v18-v1...:  253.25 MiB / 347.04 MiB  72.97% 5.24 MiB
+    > gcr.io/k8s-minikube/kicbase...:  455.87 MiB / 502.26 MiB  90.76% 5.21 MiB
+    > preloaded-images-k8s-v18-v1...:  256.12 MiB / 347.04 MiB  73.80% 5.24 MiB
+    > gcr.io/k8s-minikube/kicbase...:  456.83 MiB / 502.26 MiB  90.95% 5.21 MiB
+    > preloaded-images-k8s-v18-v1...:  257.31 MiB / 347.04 MiB  74.15% 5.24 MiB
+    > gcr.io/k8s-minikube/kicbase...:  457.84 MiB / 502.26 MiB  91.16% 5.21 MiB
+    > preloaded-images-k8s-v18-v1...:  257.62 MiB / 347.04 MiB  74.24% 5.37 MiB
+    > gcr.io/k8s-minikube/kicbase...:  458.69 MiB / 502.26 MiB  91.32% 5.21 MiB
+    > preloaded-images-k8s-v18-v1...:  258.50 MiB / 347.04 MiB  74.49% 5.37 MiB
+    > gcr.io/k8s-minikube/kicbase...:  459.81 MiB / 502.26 MiB  91.55% 5.19 MiB
+    > preloaded-images-k8s-v18-v1...:  258.94 MiB / 347.04 MiB  74.61% 5.37 MiB
+    > gcr.io/k8s-minikube/kicbase...:  460.72 MiB / 502.26 MiB  91.73% 5.19 MiB
+    > preloaded-images-k8s-v18-v1...:  258.94 MiB / 347.04 MiB  74.61% 5.16 MiB
+    > gcr.io/k8s-minikube/kicbase...:  461.62 MiB / 502.26 MiB  91.91% 5.19 MiB
+    > preloaded-images-k8s-v18-v1...:  260.09 MiB / 347.04 MiB  74.95% 5.16 MiB
+    > gcr.io/k8s-minikube/kicbase...:  462.55 MiB / 502.26 MiB  92.09% 5.15 MiB
+    > preloaded-images-k8s-v18-v1...:  262.25 MiB / 347.04 MiB  75.57% 5.16 MiB
+    > gcr.io/k8s-minikube/kicbase...:  463.52 MiB / 502.26 MiB  92.29% 5.15 MiB
+    > preloaded-images-k8s-v18-v1...:  263.06 MiB / 347.04 MiB  75.80% 5.28 MiB
+    > gcr.io/k8s-minikube/kicbase...:  464.56 MiB / 502.26 MiB  92.49% 5.15 MiB
+    > preloaded-images-k8s-v18-v1...:  263.44 MiB / 347.04 MiB  75.91% 5.28 MiB
+    > gcr.io/k8s-minikube/kicbase...:  465.62 MiB / 502.26 MiB  92.71% 5.15 MiB
+    > preloaded-images-k8s-v18-v1...:  266.50 MiB / 347.04 MiB  76.79% 5.28 MiB
+    > gcr.io/k8s-minikube/kicbase...:  466.67 MiB / 502.26 MiB  92.91% 5.15 MiB
+    > preloaded-images-k8s-v18-v1...:  267.72 MiB / 347.04 MiB  77.14% 5.43 MiB
+    > gcr.io/k8s-minikube/kicbase...:  467.69 MiB / 502.26 MiB  93.12% 5.15 MiB
+    > preloaded-images-k8s-v18-v1...:  268.91 MiB / 347.04 MiB  77.49% 5.43 MiB
+    > gcr.io/k8s-minikube/kicbase...:  468.61 MiB / 502.26 MiB  93.30% 5.14 MiB
+    > preloaded-images-k8s-v18-v1...:  270.16 MiB / 347.04 MiB  77.85% 5.43 MiB
+    > gcr.io/k8s-minikube/kicbase...:  469.72 MiB / 502.26 MiB  93.52% 5.14 MiB
+    > preloaded-images-k8s-v18-v1...:  271.41 MiB / 347.04 MiB  78.21% 5.48 MiB
+    > gcr.io/k8s-minikube/kicbase...:  470.73 MiB / 502.26 MiB  93.72% 5.14 MiB
+    > preloaded-images-k8s-v18-v1...:  272.66 MiB / 347.04 MiB  78.57% 5.48 MiB
+    > gcr.io/k8s-minikube/kicbase...:  471.76 MiB / 502.26 MiB  93.93% 5.15 MiB
+    > preloaded-images-k8s-v18-v1...:  273.81 MiB / 347.04 MiB  78.90% 5.48 MiB
+    > gcr.io/k8s-minikube/kicbase...:  472.72 MiB / 502.26 MiB  94.12% 5.15 MiB
+    > preloaded-images-k8s-v18-v1...:  274.91 MiB / 347.04 MiB  79.22% 5.50 MiB
+    > gcr.io/k8s-minikube/kicbase...:  473.81 MiB / 502.26 MiB  94.34% 5.15 MiB
+    > preloaded-images-k8s-v18-v1...:  274.91 MiB / 347.04 MiB  79.22% 5.50 MiB
+    > gcr.io/k8s-minikube/kicbase...:  474.55 MiB / 502.26 MiB  94.48% 5.11 MiB
+    > preloaded-images-k8s-v18-v1...:  274.91 MiB / 347.04 MiB  79.22% 5.50 MiB
+    > gcr.io/k8s-minikube/kicbase...:  475.61 MiB / 502.26 MiB  94.69% 5.11 MiB
+    > preloaded-images-k8s-v18-v1...:  275.22 MiB / 347.04 MiB  79.31% 5.18 MiB
+    > gcr.io/k8s-minikube/kicbase...:  476.50 MiB / 502.26 MiB  94.87% 5.11 MiB
+    > preloaded-images-k8s-v18-v1...:  278.56 MiB / 347.04 MiB  80.27% 5.18 MiB
+    > gcr.io/k8s-minikube/kicbase...:  477.31 MiB / 502.26 MiB  95.03% 5.08 MiB
+    > preloaded-images-k8s-v18-v1...:  279.50 MiB / 347.04 MiB  80.54% 5.18 MiB
+    > gcr.io/k8s-minikube/kicbase...:  478.12 MiB / 502.26 MiB  95.19% 5.08 MiB
+    > preloaded-images-k8s-v18-v1...:  280.72 MiB / 347.04 MiB  80.89% 5.44 MiB
+    > gcr.io/k8s-minikube/kicbase...:  478.98 MiB / 502.26 MiB  95.37% 5.08 MiB
+    > preloaded-images-k8s-v18-v1...:  281.91 MiB / 347.04 MiB  81.23% 5.44 MiB
+    > gcr.io/k8s-minikube/kicbase...:  479.87 MiB / 502.26 MiB  95.54% 5.02 MiB
+    > preloaded-images-k8s-v18-v1...:  283.09 MiB / 347.04 MiB  81.57% 5.44 MiB
+    > gcr.io/k8s-minikube/kicbase...:  480.59 MiB / 502.26 MiB  95.69% 5.02 MiB
+    > preloaded-images-k8s-v18-v1...:  284.37 MiB / 347.04 MiB  81.94% 5.48 MiB
+    > gcr.io/k8s-minikube/kicbase...:  481.41 MiB / 502.26 MiB  95.85% 5.02 MiB
+    > preloaded-images-k8s-v18-v1...:  284.78 MiB / 347.04 MiB  82.06% 5.48 MiB
+    > gcr.io/k8s-minikube/kicbase...:  482.37 MiB / 502.26 MiB  96.04% 4.97 MiB
+    > preloaded-images-k8s-v18-v1...:  284.81 MiB / 347.04 MiB  82.07% 5.48 MiB
+    > gcr.io/k8s-minikube/kicbase...:  483.16 MiB / 502.26 MiB  96.20% 4.97 MiB
+    > preloaded-images-k8s-v18-v1...:  287.25 MiB / 347.04 MiB  82.77% 5.44 MiB
+    > gcr.io/k8s-minikube/kicbase...:  483.70 MiB / 502.26 MiB  96.30% 4.97 MiB
+    > preloaded-images-k8s-v18-v1...:  288.97 MiB / 347.04 MiB  83.27% 5.44 MiB
+    > gcr.io/k8s-minikube/kicbase...:  484.66 MiB / 502.26 MiB  96.49% 4.90 MiB
+    > preloaded-images-k8s-v18-v1...:  290.16 MiB / 347.04 MiB  83.61% 5.44 MiB
+    > gcr.io/k8s-minikube/kicbase...:  485.61 MiB / 502.26 MiB  96.68% 4.90 MiB
+    > preloaded-images-k8s-v18-v1...:  290.31 MiB / 347.04 MiB  83.65% 5.42 MiB
+    > gcr.io/k8s-minikube/kicbase...:  486.48 MiB / 502.26 MiB  96.86% 4.90 MiB
+    > preloaded-images-k8s-v18-v1...:  291.37 MiB / 347.04 MiB  83.96% 5.42 MiB
+    > gcr.io/k8s-minikube/kicbase...:  487.44 MiB / 502.26 MiB  97.05% 4.88 MiB
+    > preloaded-images-k8s-v18-v1...:  292.59 MiB / 347.04 MiB  84.31% 5.42 MiB
+    > gcr.io/k8s-minikube/kicbase...:  488.36 MiB / 502.26 MiB  97.23% 4.88 MiB
+    > preloaded-images-k8s-v18-v1...:  295.31 MiB / 347.04 MiB  85.10% 5.60 MiB
+    > gcr.io/k8s-minikube/kicbase...:  489.27 MiB / 502.26 MiB  97.41% 4.88 MiB
+    > preloaded-images-k8s-v18-v1...:  295.94 MiB / 347.04 MiB  85.28% 5.60 MiB
+    > gcr.io/k8s-minikube/kicbase...:  490.08 MiB / 502.26 MiB  97.57% 4.85 MiB
+    > preloaded-images-k8s-v18-v1...:  296.06 MiB / 347.04 MiB  85.31% 5.60 MiB
+    > gcr.io/k8s-minikube/kicbase...:  490.78 MiB / 502.26 MiB  97.71% 4.85 MiB
+    > preloaded-images-k8s-v18-v1...:  296.22 MiB / 347.04 MiB  85.36% 5.34 MiB
+    > gcr.io/k8s-minikube/kicbase...:  491.61 MiB / 502.26 MiB  97.88% 4.85 MiB
+    > preloaded-images-k8s-v18-v1...:  297.81 MiB / 347.04 MiB  85.82% 5.34 MiB
+    > gcr.io/k8s-minikube/kicbase...:  492.84 MiB / 502.26 MiB  98.12% 4.83 MiB
+    > preloaded-images-k8s-v18-v1...:  300.22 MiB / 347.04 MiB  86.51% 5.34 MiB
+    > gcr.io/k8s-minikube/kicbase...:  494.53 MiB / 502.26 MiB  98.46% 4.83 MiB
+    > preloaded-images-k8s-v18-v1...:  300.25 MiB / 347.04 MiB  86.52% 5.43 MiB
+    > gcr.io/k8s-minikube/kicbase...:  495.56 MiB / 502.26 MiB  98.67% 4.83 MiB
+    > preloaded-images-k8s-v18-v1...:  300.31 MiB / 347.04 MiB  86.54% 5.43 MiB
+    > gcr.io/k8s-minikube/kicbase...:  497.17 MiB / 502.26 MiB  98.99% 4.99 MiB
+    > preloaded-images-k8s-v18-v1...:  300.62 MiB / 347.04 MiB  86.63% 5.43 MiB
+    > gcr.io/k8s-minikube/kicbase...:  498.05 MiB / 502.26 MiB  99.16% 4.99 MiB
+    > preloaded-images-k8s-v18-v1...:  301.16 MiB / 347.04 MiB  86.78% 5.18 MiB
+    > gcr.io/k8s-minikube/kicbase...:  499.16 MiB / 502.26 MiB  99.38% 4.99 MiB
+    > preloaded-images-k8s-v18-v1...:  303.34 MiB / 347.04 MiB  87.41% 5.18 MiB
+    > gcr.io/k8s-minikube/kicbase...:  500.08 MiB / 502.26 MiB  99.56% 4.98 MiB
+    > preloaded-images-k8s-v18-v1...:  305.19 MiB / 347.04 MiB  87.94% 5.18 MiB
+    > gcr.io/k8s-minikube/kicbase...:  501.12 MiB / 502.26 MiB  99.77% 4.98 MiB
+    > preloaded-images-k8s-v18-v1...:  306.12 MiB / 347.04 MiB  88.21% 5.38 MiB
+    > gcr.io/k8s-minikube/kicbase...:  502.09 MiB / 502.26 MiB  99.97% 4.98 MiB
+    > gcr.io/k8s-minikube/kicbase...:  502.20 MiB / 502.26 MiB  99.99% 6.26 MiB
+
+    > preloaded-images-k8s-v18-v1...:  307.44 MiB / 347.04 MiB  88.59% 5.38 MiB
+    > preloaded-images-k8s-v18-v1...:  307.91 MiB / 347.04 MiB  88.72% 5.38 MiB
+    > preloaded-images-k8s-v18-v1...:  308.97 MiB / 347.04 MiB  89.03% 5.34 MiB
+    > preloaded-images-k8s-v18-v1...:  309.44 MiB / 347.04 MiB  89.17% 5.34 MiB
+    > preloaded-images-k8s-v18-v1...:  310.78 MiB / 347.04 MiB  89.55% 5.34 MiB
+    > preloaded-images-k8s-v18-v1...:  311.87 MiB / 347.04 MiB  89.87% 5.30 MiB
+    > preloaded-images-k8s-v18-v1...:  312.94 MiB / 347.04 MiB  90.17% 5.30 MiB
+    > preloaded-images-k8s-v18-v1...:  314.31 MiB / 347.04 MiB  90.57% 5.30 MiB
+    > preloaded-images-k8s-v18-v1...:  315.41 MiB / 347.04 MiB  90.89% 5.34 MiB
+    > preloaded-images-k8s-v18-v1...:  316.50 MiB / 347.04 MiB  91.20% 5.34 MiB
+    > preloaded-images-k8s-v18-v1...:  317.87 MiB / 347.04 MiB  91.60% 5.34 MiB
+    > preloaded-images-k8s-v18-v1...:  318.94 MiB / 347.04 MiB  91.90% 5.38 MiB
+    > preloaded-images-k8s-v18-v1...:  320.09 MiB / 347.04 MiB  92.24% 5.38 MiB
+    > preloaded-images-k8s-v18-v1...:  321.41 MiB / 347.04 MiB  92.61% 5.38 MiB
+    > preloaded-images-k8s-v18-v1...:  322.53 MiB / 347.04 MiB  92.94% 5.41 MiB
+    > preloaded-images-k8s-v18-v1...:  323.69 MiB / 347.04 MiB  93.27% 5.41 MiB
+    > preloaded-images-k8s-v18-v1...:  324.91 MiB / 347.04 MiB  93.62% 5.41 MiB
+    > preloaded-images-k8s-v18-v1...:  326.03 MiB / 347.04 MiB  93.95% 5.44 MiB
+    > preloaded-images-k8s-v18-v1...:  327.44 MiB / 347.04 MiB  94.35% 5.44 MiB
+    > preloaded-images-k8s-v18-v1...:  328.78 MiB / 347.04 MiB  94.74% 5.44 MiB
+    > preloaded-images-k8s-v18-v1...:  330.00 MiB / 347.04 MiB  95.09% 5.52 MiB
+    > preloaded-images-k8s-v18-v1...:  331.37 MiB / 347.04 MiB  95.49% 5.52 MiB
+    > preloaded-images-k8s-v18-v1...:  332.78 MiB / 347.04 MiB  95.89% 5.52 MiB
+    > preloaded-images-k8s-v18-v1...:  334.16 MiB / 347.04 MiB  96.29% 5.61 MiB
+    > preloaded-images-k8s-v18-v1...:  335.56 MiB / 347.04 MiB  96.69% 5.61 MiB
+    > preloaded-images-k8s-v18-v1...:  336.81 MiB / 347.04 MiB  97.05% 5.61 MiB
+    > preloaded-images-k8s-v18-v1...:  338.34 MiB / 347.04 MiB  97.49% 5.70 MiB
+    > preloaded-images-k8s-v18-v1...:  339.62 MiB / 347.04 MiB  97.86% 5.70 MiB
+    > preloaded-images-k8s-v18-v1...:  341.19 MiB / 347.04 MiB  98.31% 5.70 MiB
+    > preloaded-images-k8s-v18-v1...:  342.59 MiB / 347.04 MiB  98.72% 5.79 MiB
+    > preloaded-images-k8s-v18-v1...:  344.03 MiB / 347.04 MiB  99.13% 5.79 MiB
+    > preloaded-images-k8s-v18-v1...:  345.53 MiB / 347.04 MiB  99.57% 5.79 MiB
+    > preloaded-images-k8s-v18-v1...:  347.00 MiB / 347.04 MiB  99.99% 5.89 MiB
+    > preloaded-images-k8s-v18-v1...:  347.04 MiB / 347.04 MiB  100.00% 4.13 Mi
+🔥  Creating docker container (CPUs=2, Memory=2200MB) ...| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K
+
+🧯  Docker is nearly out of disk space, which may cause deployments to fail! (98% of capacity). You can pass '--force' to skip this check.
+💡  Suggestion: 
+
+    Try one or more of the following to free up space on the device:
+    
+    1. Run "docker system prune" to remove unused Docker data (optionally with "-a")
+    2. Increase the storage allocated to Docker for Desktop by clicking on:
+    Docker icon > Preferences > Resources > Disk Image Size
+    3. Run "minikube ssh -- docker system prune" if using the Docker container runtime
+🍿  Related issue: https://github.com/kubernetes/minikube/issues/9024
+
+🐳  Preparing Kubernetes v1.33.1 on Docker 28.1.1 ...| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K
+    ▪ Generating certificates and keys ...- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K
+    ▪ Booting up control plane ...- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K
+    ▪ Configuring RBAC rules ...\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K
+🔗  Configuring bridge CNI (Container Networking Interface) ...
+🔎  Verifying Kubernetes components...
+    ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+🌟  Enabled addons: storage-provisioner, default-storageclass
+
+❗  /usr/local/bin/kubectl is version 1.31.0, which may have incompatibilities with Kubernetes 1.33.1.
+    ▪ Want kubectl v1.33.1? Try 'minikube kubectl -- get pods -A'
+🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ minikube start --driver=dockerssh vpsd[K[4Pexitdocker volume ls[3@container[C[C[Crun -d --name wp-db --network wp-net -v wp-db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=rootpass -e MYSQL_DB=wordpress -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wppass mysql:5.7[A
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ [C[C[C[C[C[C[Ccontainer rm wp-db [K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Plogs[C[C[C[C[C[C[C[8@container rm[C[C[C[C[C[C[Crun -d --name wp-db --network wp-net -v wp-db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=rootpass -e MYSQL_DB=wordpress -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wppass mysql:5.7[A
+]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ [C[C[C[C[C[C[Ccontainer ls[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pvolume[C[C[Cexit[Kssh vpsdminikube start --driver=docker[K[7mkubectl cluster-info[27mkubectl cluster-info
+[?2004l
+[0;32mKubernetes control plane[0m is running at [0;33mhttps://192.168.58.2:8443[0m
+[0;32mCoreDNS[0m is running at [0;33mhttps://192.168.58.2:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy[0m
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ exit
+[?2004l
+exit
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ ls[K[Kls
+[?2004l
+minikube-linux-amd64  minikube.log
+[?2004h]0;user@user-vb: ~/Soft/git/codeby-devops/lesson19[01;32muser@user-vb[00m:[01;34m~/Soft/git/codeby-devops/lesson19[00m$ lssudo usermod -aG docker user && newgrp docker[25Pkubectl cluster

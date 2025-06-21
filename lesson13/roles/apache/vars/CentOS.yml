@@ -1,0 +1,19 @@
+---
+apache_packages:
+  - httpd
+  - php
+  - php-mysql
+  - php-gd
+  - php-mbstring
+  - php-xml
+  - php-xmlrpc
+  - php-soap
+  - php-intl
+  - php-json
+  - php-curl
+apache_service_name: httpd
+apache_user: apache
+apache_group: apache
+apache_vhost_config_path: /etc/httpd/conf.d
+apache_enable_module_command: "/usr/sbin/httpd -M | grep -q"
+wordpress_checksum: "c9a1a9d8b4d5f4b3d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d"

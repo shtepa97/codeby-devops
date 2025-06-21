@@ -1,0 +1,20 @@
+---
+apache_packages:
+  - apache2
+  - libapache2-mod-php
+  - php
+  - php-mysql
+  - php-gd
+  - php-mbstring
+  - php-xml
+  - php-xmlrpc
+  - php-soap
+  - php-intl
+  - php-json
+  - php-curl
+apache_service_name: apache2
+apache_user: www-data
+apache_group: www-data
+apache_vhost_config_path: /etc/apache2/sites-available
+apache_enable_module_command: "a2enmod"
+wordpress_checksum: "c9a1a9d8b4d5f4b3d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d5b5d"
