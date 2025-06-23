@@ -1,0 +1,14 @@
+{{- if .Values.wordpress.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "wordpress.wordpress.fullname" . }}-config
+  labels:
+    {{- include "wordpress.labels" . | nindent 4 }}
+data:
+  WORDPRESS_DB_HOST: {{ .Values.wordpress.env.WORDPRESS_DB_HOST | quote }}
+  WORDPRESS_DB_NAME: {{ .Values.mysql.auth.database | quote }}
+  WORDPRESS_DB_USER: {{ .Values.mysql.auth.username | quote }}
+  WORDPRESS_TABLE_PREFIX: {{ .Values.wordpress.env.WORDPRESS_TABLE_PREFIX | quote }}
+  WORDPRESS_DEBUG: {{ .Values.wordpress.env.WORDPRESS_DEBUG | quote }}
+{{- end }}

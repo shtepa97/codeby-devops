@@ -1,0 +1,64 @@
+{{- if .Values.mysql.enabled }}
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "wordpress.mysql.fullname" . }}
+  labels:
+    {{- include "wordpress.labels" . | nindent 4 }}
+    component: mysql
+spec:
+  serviceName: {{ include "wordpress.mysql.fullname" . }}
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "wordpress.selectorLabels" . | nindent 6 }}
+      component: mysql
+  template:
+    metadata:
+      labels:
+        {{- include "wordpress.selectorLabels" . | nindent 8 }}
+        component: mysql
+    spec:
+      containers:
+        - name: mysql
+          image: {{ .Values.mysql.image.repository }}:{{ .Values.mysql.image.tag }}
+          imagePullPolicy: {{ .Values.mysql.image.pullPolicy }}
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "wordpress.mysql.fullname" . }}-secret
+                  key: mysql-root-password
+            - name: MYSQL_DATABASE
+              value: {{ .Values.mysql.auth.database }}
+            - name: MYSQL_USER
+              value: {{ .Values.mysql.auth.username }}
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "wordpress.mysql.fullname" . }}-secret
+                  key: mysql-password
+          ports:
+            - name: mysql
+              containerPort: 3306
+          volumeMounts:
+            - name: mysql-data
+              mountPath: /var/lib/mysql
+          resources:
+            {{- toYaml .Values.mysql.primary.resources | nindent 12 }}
+      volumes:
+        - name: mysql-data
+          persistentVolumeClaim:
+            claimName: mysql-data
+  volumeClaimTemplates:
+    - metadata:
+        name: mysql-data
+      spec:
+        accessModes: [ "{{ .Values.mysql.primary.persistence.accessMode }}" ]
+        resources:
+          requests:
+            storage: {{ .Values.mysql.primary.persistence.size }}
+        {{- if .Values.global.storageClass }}
+        storageClassName: {{ .Values.global.storageClass }}
+        {{- end }}
+{{- end }}

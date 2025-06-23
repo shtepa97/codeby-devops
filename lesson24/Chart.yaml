@@ -1,0 +1,10 @@
+apiVersion: v2
+name: wordpress
+description: A Helm chart for WordPress with MySQL
+version: 1.0.0
+appVersion: 6.4
+dependencies:
+  - name: mysql
+    version: 9.10.2
+    repository: https://charts.bitnami.com/bitnami
+    condition: mysql.enabled

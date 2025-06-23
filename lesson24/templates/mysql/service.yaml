@@ -1,0 +1,18 @@
+{{- if .Values.mysql.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "wordpress.mysql.fullname" . }}
+  labels:
+    {{- include "wordpress.labels" . | nindent 4 }}
+    component: mysql
+spec:
+  ports:
+    - port: 3306
+      targetPort: mysql
+      name: mysql
+  selector:
+    {{- include "wordpress.selectorLabels" . | nindent 4 }}
+    component: mysql
+  clusterIP: None
+{{- end }}

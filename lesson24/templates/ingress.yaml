@@ -1,0 +1,31 @@
+{{- if and .Values.wordpress.enabled .Values.wordpress.ingress.enabled }}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "wordpress.wordpress.fullname" . }}-ingress
+  labels:
+    {{- include "wordpress.labels" . | nindent 4 }}
+  annotations:
+    {{- toYaml .Values.wordpress.ingress.annotations | nindent 4 }}
+spec:
+  ingressClassName: {{ .Values.wordpress.ingress.className }}
+  {{- if .Values.wordpress.ingress.tls }}
+  tls:
+    {{- toYaml .Values.wordpress.ingress.tls | nindent 4 }}
+  {{- end }}
+  rules:
+    {{- range .Values.wordpress.ingress.hosts }}
+    - host: {{ .host | quote }}
+      http:
+        paths:
+          {{- range .paths }}
+          - path: {{ .path }}
+            pathType: {{ .pathType }}
+            backend:
+              service:
+                name: {{ include "wordpress.wordpress.fullname" $ }}
+                port:
+                  name: http
+          {{- end }}
+    {{- end }}
+{{- end }}

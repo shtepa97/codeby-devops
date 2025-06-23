@@ -1,0 +1,42 @@
+{{- if .Values.wordpress.enabled }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "wordpress.wordpress.fullname" . }}
+  labels:
+    {{- include "wordpress.labels" . | nindent 4 }}
+    component: wordpress
+spec:
+  replicas: {{ .Values.wordpress.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "wordpress.selectorLabels" . | nindent 6 }}
+      component: wordpress
+  template:
+    metadata:
+      labels:
+        {{- include "wordpress.selectorLabels" . | nindent 8 }}
+        component: wordpress
+    spec:
+      containers:
+        - name: wordpress
+          image: {{ .Values.wordpress.image.repository }}:{{ .Values.wordpress.image.tag }}
+          imagePullPolicy: {{ .Values.wordpress.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: {{ include "wordpress.wordpress.fullname" . }}-config
+            - secretRef:
+                name: {{ include "wordpress.wordpress.fullname" . }}-secret
+          volumeMounts:
+            - name: wordpress-data
+              mountPath: /var/www/html
+          resources:
+            {{- toYaml .Values.wordpress.resources | nindent 12 }}
+      volumes:
+        - name: wordpress-data
+          persistentVolumeClaim:
+            claimName: wordpress-data
+{{- end }}
